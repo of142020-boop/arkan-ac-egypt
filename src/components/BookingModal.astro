@@ -1,0 +1,242 @@
+---
+import { siteSeoConfig } from '../data/seo-keywords';
+---
+
+<div class="booking-modal" id="booking-modal" hidden dir="rtl" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+  <div class="booking-modal__backdrop" data-close-booking></div>
+  <div class="booking-modal__card">
+    <button type="button" class="booking-modal__close" data-close-booking aria-label="إغلاق">
+      ✕
+    </button>
+
+    <div class="booking-modal__header">
+      <span class="booking-modal__badge">استجابة خلال ساعتين في جميع محافظات مصر</span>
+      <h3 id="booking-modal-title" class="heading-3">احجز موعد صيانة أو تركيب تكييف مع أركان</h3>
+      <p class="text-small">
+        أدخل بياناتك وسيتواصل معك مهندس الدعم الفني فوراً لتأكيد الموعد، أو تواصل معنا مباشرة عبر الخط الساخن {siteSeoConfig.hotline}.
+      </p>
+    </div>
+
+    <form class="booking-form" id="arkan-booking-form">
+      <div class="booking-form__row">
+        <label class="booking-form__field">
+          <span>الاسم بالكامل</span>
+          <input type="text" name="name" required placeholder="مثال: أحمد محمود" />
+        </label>
+        <label class="booking-form__field">
+          <span>رقم الموبايل (واتساب)</span>
+          <input type="tel" name="phone" required placeholder="010xxxxxxxx" />
+        </label>
+      </div>
+
+      <div class="booking-form__row">
+        <label class="booking-form__field">
+          <span>نوع الخدمة المطلوبة</span>
+          <select name="service">
+            <option value="صيانة فورية وإصلاح عطل">صيانة فورية وإصلاح عطل</option>
+            <option value="تركيب وتأسيس تكييف جديد">تركيب وتأسيس تكييف جديد</option>
+            <option value="غسيل كيميائي وشحن فريون">غسيل كيميائي وشحن فريون أصلي</option>
+            <option value="عقد صيانة سنوي للشركات والفلل">عقد صيانة سنوي للشركات والفلل</option>
+          </select>
+        </label>
+        <label class="booking-form__field">
+          <span>المنطقة / المحافظة</span>
+          <select name="area">
+            {siteSeoConfig.serviceAreas.map((area) => <option value={area}>{area}</option>)}
+          </select>
+        </label>
+      </div>
+
+      <label class="booking-form__field">
+        <span>ماركة التكييف أو ملاحظات إضافية</span>
+        <input type="text" name="notes" placeholder="مثال: تكييف كاريير 2.25 حصان إنفرتر..." />
+      </label>
+
+      <div class="booking-form__actions">
+        <button type="submit" class="btn-gold btn-gold--md booking-form__submit">
+          تأكيد الحجز الفوري
+        </button>
+        <a
+          href={`https://wa.me/${siteSeoConfig.whatsapp}?text=${encodeURIComponent('مرحباً شركة أركان، أرغب في حجز موعد صيانة/تركيب تكييف')}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="booking-form__whatsapp"
+        >
+          تواصل عبر واتساب مباشرة
+        </a>
+      </div>
+
+      <p class="booking-form__success" id="booking-success-msg" hidden>
+        تم استلام طلبك بنجاح! سيتواصل معك فريق مهندسي أركان خلال دقائق لتأكيد الموعد.
+      </p>
+    </form>
+  </div>
+</div>
+
+<style>
+  .booking-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .booking-modal[hidden] {
+    display: none;
+  }
+
+  .booking-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(45, 54, 57, 0.72);
+    backdrop-filter: blur(4px);
+  }
+
+  .booking-modal__card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 580px;
+    background-color: var(--pearl-10, #fafaf9);
+    border-radius: 28px;
+    padding: 36px 32px;
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .booking-modal__close {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 9999px;
+    background-color: var(--pearl-20, #f1f0ee);
+    color: var(--ebony-130, #2d3639);
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .booking-modal__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .booking-modal__badge {
+    background-color: var(--sun-60, #f1ca7e);
+    color: var(--ebony-130, #2d3639);
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 9999px;
+  }
+
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .booking-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .booking-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--bayou-110, #375d6c);
+  }
+
+  .booking-form__field input,
+  .booking-form__field select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(55, 93, 108, 0.25);
+    background-color: var(--pearl-20, #f1f0ee);
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--ebony-130, #2d3639);
+  }
+
+  .booking-form__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+
+  .booking-form__submit {
+    flex: 1 0 auto;
+  }
+
+  .booking-form__whatsapp {
+    padding: 18px 24px;
+    border-radius: 24px;
+    background-color: var(--bayou-120, #2d4c58);
+    color: var(--pearl-10, #fafaf9);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .booking-form__success {
+    background-color: #cde5dd;
+    color: var(--ebony-130, #2d3639);
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  @media (max-width: 600px) {
+    .booking-form__row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  const modal = document.getElementById('booking-modal');
+  const form = document.getElementById('arkan-booking-form') as HTMLFormElement | null;
+  const successMsg = document.getElementById('booking-success-msg');
+
+  document.querySelectorAll('[data-open-booking]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      modal?.removeAttribute('hidden');
+    });
+  });
+
+  document.querySelectorAll('[data-close-booking]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      modal?.setAttribute('hidden', '');
+    });
+  });
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    successMsg?.removeAttribute('hidden');
+    setTimeout(() => {
+      form.reset();
+    }, 400);
+  });
+</script>

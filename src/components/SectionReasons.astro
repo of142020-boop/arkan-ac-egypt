@@ -1,0 +1,91 @@
+---
+import { reasonsContent } from '../data/site-content';
+---
+
+<section id="reasons" class="section section--pearl20">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">معايير الجودة الهندسية</span>
+      <h2 class="heading-2">{reasonsContent.title}</h2>
+      <p class="text-body">{reasonsContent.subtitle}</p>
+    </div>
+
+    <div class="reasons-grid">
+      <div class="reasons-list">
+        {
+          reasonsContent.items.map((item) => (
+            <div class="reason-item">
+              <div class="icon-circle-lg">
+                <img src={item.icon} alt="" width="34" height="34" />
+              </div>
+              <div class="reason-item__body">
+                <h3 class="heading-3">{item.title}</h3>
+                <p class="text-body">{item.description}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="reasons-photo">
+        <img
+          src={reasonsContent.illustration}
+          alt="فريق مهندسي شركة أركان لصيانة وتركيب التكييف في مصر"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .reasons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .reason-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .reason-item__body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .reasons-photo {
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    box-shadow: var(--card-shadow);
+  }
+
+  .reasons-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 960px) {
+    .reasons-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .reasons-photo {
+      max-height: 400px;
+      aspect-ratio: 16 / 10;
+    }
+  }
+</style>

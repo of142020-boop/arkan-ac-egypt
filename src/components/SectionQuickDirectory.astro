@@ -1,0 +1,156 @@
+---
+import { brandsData } from '../data/brands-data';
+import { areasData } from '../data/areas-data';
+import { guidesData } from '../data/guides-data';
+---
+
+<section class="section section--pearl10">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">تصفح سريع ومنظم</span>
+      <h2 class="heading-2">كل ما تحتاجه لصيانة وتركيب تكييفك في مصر</h2>
+      <p class="text-body">
+        اختر ماركة تكييفك أو منطقتك الجغرافية أو تصفح أدلة الأسعار وأكواد الأعطال للوصول المباشر للمعلومة والخدمة.
+      </p>
+    </div>
+
+    <div class="directory-grid">
+      <!-- Brands Card -->
+      <div class="directory-card">
+        <div class="directory-card__head">
+          <h3 class="heading-3">صيانة ماركات التكييف</h3>
+          <a href="/brands" class="directory-card__all">عرض الكل ←</a>
+        </div>
+        <div class="directory-links">
+          {
+            brandsData.map((b) => (
+              <a href={`/brands/${b.slug}`} class="dir-pill">
+                تكييف {b.nameAr}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Areas Card -->
+      <div class="directory-card">
+        <div class="directory-card__head">
+          <h3 class="heading-3">مناطق التغطية في مصر</h3>
+          <a href="/areas" class="directory-card__all">عرض الكل ←</a>
+        </div>
+        <div class="directory-links">
+          {
+            areasData.map((a) => (
+              <a href={`/areas/${a.slug}`} class="dir-pill">
+                {a.nameAr}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Guides Card -->
+      <div class="directory-card">
+        <div class="directory-card__head">
+          <h3 class="heading-3">الأدلة الهندسية والأسعار</h3>
+          <a href="/guides" class="directory-card__all">عرض الكل ←</a>
+        </div>
+        <ul class="guide-mini-list">
+          {
+            guidesData.map((g) => (
+              <li>
+                <a href={`/guides/${g.slug}`}>{g.title.split('(')[0].trim()}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .directory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .directory-card {
+    background-color: var(--pearl-20);
+    border-radius: var(--radius-card);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .directory-card__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(55, 93, 108, 0.12);
+  }
+
+  .directory-card__all {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--bayou-110);
+    white-space: nowrap;
+  }
+
+  .directory-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .dir-pill {
+    background-color: var(--pearl-10);
+    color: var(--bayou-110);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .dir-pill:hover {
+    background-color: var(--sun-60);
+    color: var(--ebony-130);
+  }
+
+  .guide-mini-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .guide-mini-list a {
+    display: block;
+    background-color: var(--pearl-10);
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--bayou-110);
+    transition: background-color 0.2s ease;
+  }
+
+  .guide-mini-list a:hover {
+    background-color: var(--sun-60);
+    color: var(--ebony-130);
+  }
+
+  @media (max-width: 1024px) {
+    .directory-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

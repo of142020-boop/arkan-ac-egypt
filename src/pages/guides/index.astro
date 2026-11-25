@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import AcBtuCalculator from '../../components/AcBtuCalculator.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { guidesData } from '../../data/guides-data';
+import { siteSeoConfig } from '../../data/seo-keywords';
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'الأدلة الهندسية والأسعار', url: '/guides' },
+];
+---
+
+<BaseLayout
+  title={`موسوعة أدلة صيانة وأسعار وأعطال التكييف في مصر 2026 | ${siteSeoConfig.brandFullName}`}
+  description="مكتبة أركان المرجعية الشاملة: أكواد أعطال التكييف، أسعار الصيانة والتركيب وشحن الفريون 2026، أسباب ضعف التبريد وتنقيط المياه، وحساب قدرة التكييف بالحصان."
+  canonicalPath="/guides"
+  breadcrumbs={breadcrumbs}
+>
+  <Navbar activePath="/guides" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container hub-hero">
+        <span class="section-eyebrow">موسوعة أركان المعرفية</span>
+        <h1 class="heading-1">الأدلة الهندسية وأسعار صيانة وتركيب التكييف في مصر 2026</h1>
+        <p class="text-lead hub-hero__desc">
+          مرجعك العربي الموثق بإشراف مهندسي التبريد والتكييف في شركة أركان لتشخيص الأعطال، معرفة الأسعار العادلة، وتأسيس أنظمة التكييف بدون أخطاء.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="guides-grid">
+          {
+            guidesData.map((guide) => (
+              <a href={`/guides/${guide.slug}`} class="guide-card">
+                <div class="guide-card__meta">
+                  <span class="guide-cat">{guide.category}</span>
+                  <span class="guide-time">⏱ {guide.readTime}</span>
+                </div>
+                <h2 class="heading-3">{guide.title}</h2>
+                <p class="text-body">{guide.description}</p>
+                <span class="guide-cta">اقرأ الدليل التفصيلي ←</span>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <AcBtuCalculator />
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .hub-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .hub-hero__desc { max-width: 760px; }
+  .guides-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .guide-card { background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 32px; display: flex; flex-direction: column; gap: 14px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .guide-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
+  .guide-card__meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .guide-cat { background-color: var(--sun-60); color: var(--ebony-130); font-family: var(--font-heading); font-weight: 700; font-size: 12px; padding: 5px 14px; border-radius: 9999px; }
+  .guide-time { font-size: 13px; color: var(--ebony-100); font-weight: 600; }
+  .guide-cta { margin-top: auto; font-family: var(--font-heading); font-weight: 700; font-size: 15px; color: var(--bayou-110); }
+  @media (max-width: 860px) { .guides-grid { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,129 @@
+---
+import { servicesContent } from '../data/site-content';
+
+const serviceHrefMap: Record<string, string> = {
+  installation: '/services/ac-installation-piping',
+  maintenance: '/services/ac-maintenance-egypt',
+  contracts: '/services/ac-freon-charging',
+  'smart-hvac': '/services/ac-cleaning-washing',
+};
+---
+
+<section id="services" class="section section--bayou">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">خدماتنا الهندسية الأساسية</span>
+      <h2 class="heading-2">{servicesContent.title}</h2>
+      <p class="text-body">{servicesContent.subtitle}</p>
+    </div>
+
+    <div class="services-grid">
+      {
+        servicesContent.cards.map((card) => (
+          <a
+            href={serviceHrefMap[card.id] || '/services'}
+            class="service-card"
+          >
+            <div class="icon-circle-lg" aria-hidden="true">
+              {card.id === 'installation' && (
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="9" rx="2" />
+                  <path d="M6 13v2M18 13v2M8 18c0 1.5 1 2 1 3M12 17c0 1.5 1 2 1 3M16 18c0 1.5 1 2 1 3" />
+                </svg>
+              )}
+              {card.id === 'maintenance' && (
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                </svg>
+              )}
+              {card.id === 'contracts' && (
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                  <path d="M8 2h8" />
+                </svg>
+              )}
+              {card.id === 'smart-hvac' && (
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07" />
+                </svg>
+              )}
+            </div>
+
+            <div class="service-card__body">
+              <h3 class="heading-3">{card.title}</h3>
+              <p class="text-body">{card.description}</p>
+              <span class="service-card__more">تفاصيل الخدمة والأسعار ←</span>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="services-footer">
+      <a href="/services" class="btn-gold btn-gold--md">
+        استعرض جميع خدمات أركان الـ 8
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .service-card {
+    background-color: var(--pearl-10);
+    color: var(--ebony-130);
+    border-radius: var(--radius-card);
+    padding: 32px;
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.22);
+  }
+
+  .service-card__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .service-card__body .text-body {
+    color: var(--ebony-100);
+  }
+
+  .service-card__more {
+    margin-top: 4px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--bayou-110);
+  }
+
+  .services-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card {
+      padding: 24px;
+      flex-direction: column;
+    }
+  }
+</style>

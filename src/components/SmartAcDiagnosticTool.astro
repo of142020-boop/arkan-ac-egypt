@@ -1,0 +1,390 @@
+---
+import { siteSeoConfig } from '../data/seo-keywords';
+---
+
+<section class="section section--pearl20">
+  <div class="container">
+    <div class="tools-dual-grid">
+      <!-- Tool 1: Interactive Error Code & Symptom Finder -->
+      <div class="tool-box">
+        <div class="tool-box__head">
+          <span class="section-eyebrow">مشخّص أركان الذكي</span>
+          <h2 class="heading-3">تشخيص فوري لأكواد وأعطال التكييف بالماركة</h2>
+          <p class="text-sm">
+            اختر ماركة تكييفك والعطل أو الكود الظاهر لمعرفة السبب الهندسي والتكلفة التقديرية وحجز الفني مع قطعة الغيار المناسبة فوراً.
+          </p>
+        </div>
+
+        <div class="tool-controls">
+          <label class="tool-field">
+            <span>ماركة التكييف</span>
+            <select id="diag-brand">
+              <option value="شارب (Sharp)">شارب (Sharp)</option>
+              <option value="كاريير (Carrier)">كاريير (Carrier)</option>
+              <option value="إل جي (LG)">إل جي (LG)</option>
+              <option value="ميديا (Midea)">ميديا (Midea)</option>
+              <option value="يونيون إير (Unionaire)">يونيون إير (Unionaire)</option>
+              <option value="فريش (Fresh)">فريش (Fresh)</option>
+              <option value="تورنيدو (Tornado)">تورنيدو (Tornado)</option>
+              <option value="جري (Gree)">جري (Gree)</option>
+              <option value="دايكن (Daikin)">دايكن (Daikin)</option>
+              <option value="هاير (Haier)">هاير (Haier)</option>
+            </select>
+          </label>
+
+          <label class="tool-field">
+            <span>الكود أو العطل الظاهر</span>
+            <select id="diag-issue">
+              <option value="ec">كود EC / F0 / CH38 (نقص أو تسريب فريون)</option>
+              <option value="sensor">كود E1 / E2 / F1 / CH01 (عطل حساس حرارة)</option>
+              <option value="comm">كود E6 / CH05 / EL01 (خطأ اتصال إنفرتر)</option>
+              <option value="fan">كود E3 / H6 (توقف أو بطء مروحة داخلية)</option>
+              <option value="lamp">وميض اللمبة البرتقالي / فصل متكرر للكباس</option>
+              <option value="hotair">التكييف يعمل ويخرج هواء ساخن (ضعف تبريد)</option>
+              <option value="water">تنقيط أو تسريب مياه داخل الغرفة</option>
+              <option value="noise">صوت عالي أو اهتزاز بالوحدة</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="diag-output" id="diag-output">
+          <div class="diag-output__badge" id="diag-urgency">⚠️ إجراء وقائي: أوقف تشغيل الجهاز لحماية الكباس</div>
+          <strong class="diag-output__cause" id="diag-cause">
+            تشخيص مبدئي: انخفاض ضغط غاز الفريون نتيجة تسريب في صواميل الفلير أو الوصلات.
+          </strong>
+          <p class="diag-output__fix" id="diag-fix">
+            الحل الهندسي: ضغط الدائرة بالنيتروجين الجاف لتحديد مكان التسريب ومعالجته، ثم سحب فاكيوم كامل وشحن فريون أصلي بالميزان الإلكتروني.
+          </p>
+          <div class="diag-output__price" id="diag-price">
+            التكلفة الاسترشادية المتوقعة: 900 – 1,850 ج.م (شامل الضمان المكتوب)
+          </div>
+          <a
+            id="diag-wa-btn"
+            href={`https://wa.me/${siteSeoConfig.whatsapp}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-gold btn-gold--sm"
+            style="width: 100%; margin-top: 6px;"
+          >
+            إرسال التشخيص على واتساب وحجز فني بالقطعة المناسبة
+          </a>
+        </div>
+      </div>
+
+      <!-- Tool 2: Instant Transparent EGP Service Cost Estimator -->
+      <div class="tool-box">
+        <div class="tool-box__head">
+          <span class="section-eyebrow">تسعير شفاف قبل الزيارة</span>
+          <h2 class="heading-3">حاسبة تكلفة الصيانة والتركيب والتأسيس الفورية (2026)</h2>
+          <p class="text-sm">
+            احسب التكلفة التقديرية لطلبك في ثوانٍ شاملة خصم المجموعات للأكثر من جهاز بدون أي مصاريف خفية.
+          </p>
+        </div>
+
+        <div class="tool-controls">
+          <label class="tool-field">
+            <span>نوع الخدمة المطلوبة</span>
+            <select id="cost-service">
+              <option value="wash">غسيل كيميائي وتعقيم بالكيس بالمنزل</option>
+              <option value="install">تركيب تكييف سبليت جديد بالفاكيوم</option>
+              <option value="move">فك ونقل وإعادة تركيب مع حبس الفريون</option>
+              <option value="freon410">شحن فريون R410a أصلي كامل (إنفرتر)</option>
+              <option value="freon22">شحن فريون R22 أصلي (تكييف عادي)</option>
+              <option value="piping">تأسيس مواسير نحاس + عزل + صرف (حساب بالمتر)</option>
+              <option value="inspect">كشف وتشخيص عطل فني رقمي</option>
+            </select>
+          </label>
+
+          <div class="tool-row-2">
+            <label class="tool-field">
+              <span id="cost-qty-label">عدد الأجهزة</span>
+              <input type="number" id="cost-qty" min="1" max="50" value="2" />
+            </label>
+
+            <label class="tool-field">
+              <span>قدرة التكييف</span>
+              <select id="cost-hp">
+                <option value="1">1.5 – 2.25 حصان</option>
+                <option value="1.2">3 حصان</option>
+                <option value="1.45">4 – 5 حصان / كونسيلد</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="diag-output diag-output--bayou">
+          <span class="cost-label">التكلفة الاسترشادية الإجمالية (شاملة الضمان):</span>
+          <strong class="cost-total" id="cost-total-out">900 – 1,150 ج.م</strong>
+          <p class="cost-note" id="cost-note-out">
+            يشمل غسيل الوحدتين الداخلية والخارجية، تسليك الصرف، وفحص ضغط الفريون مجاناً.
+          </p>
+          <button type="button" class="btn-gold btn-gold--sm" data-open-booking style="width: 100%; margin-top: 6px;">
+            تثبيت العرض وحجز موعد الآن
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tools-dual-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .tool-box {
+    background-color: var(--pearl-10);
+    border-radius: var(--radius-card);
+    padding: 32px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tool-box__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .tool-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .tool-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .tool-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13.5px;
+    color: var(--bayou-110);
+  }
+
+  .tool-field select,
+  .tool-field input {
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1.5px solid var(--pearl-40);
+    background-color: var(--pearl-20);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ebony-130);
+  }
+
+  .diag-output {
+    margin-top: auto;
+    background-color: var(--pearl-20);
+    border-radius: 20px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .diag-output--bayou {
+    background-color: var(--bayou-120);
+    color: var(--pearl-10);
+  }
+
+  .diag-output__badge {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: rgba(233, 172, 53, 0.22);
+    color: var(--ebony-130);
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 9999px;
+  }
+
+  .diag-output__cause {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    color: var(--bayou-120);
+  }
+
+  .diag-output__fix {
+    font-size: 14px;
+    color: var(--ebony-130);
+    line-height: 1.7;
+  }
+
+  .diag-output__price {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--bayou-110);
+  }
+
+  .cost-label {
+    color: var(--sun-60);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .cost-total {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--pearl-10);
+  }
+
+  .cost-note {
+    font-size: 13.5px;
+    color: var(--pearl-40);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 960px) {
+    .tools-dual-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .tool-box {
+      padding: 24px;
+    }
+  }
+</style>
+
+<script define:vars={{ whatsappNum: siteSeoConfig.whatsapp }}>
+  const diagData = {
+    ec: {
+      urgency: '⚠️ أوقف التكييف فوراً لحماية الكباس من السخونة',
+      cause: 'تشخيص مبدئي: تسريب أو نقص في شحنة غاز الفريون بدائرة التبريد.',
+      fix: 'الحل الهندسي: فحص الصواميل والكويل بضغط النيتروجين وإصلاح التسريب، ثم سحب فاكيوم وشحن فريون أصلي بالوزن.',
+      price: 'التكلفة الاسترشادية: 900 – 1,850 ج.م (شامل ضمان 6 شهور)',
+    },
+    sensor: {
+      urgency: '💡 عطل إلكتروني بسيط يُصلح في نفس الزيارة',
+      cause: 'تشخيص مبدئي: تلف أو تغير قيمة مقاومة حساس حرارة الغرفة (T1) أو المبخر (T2).',
+      fix: 'الحل الهندسي: قياس الحساس بالأفوميتر واستبداله بحساس أصلي مطابق لقيمة الأوم (kΩ) الخاصة بالماركة.',
+      price: 'التكلفة الاسترشادية: 400 – 650 ج.م (شامل حساس أصلي وضمان 6 شهور)',
+    },
+    comm: {
+      urgency: '⚡ افصل المفتاح الرئيسي 10 دقائق لإعادة ضبط الكارتة',
+      cause: 'تشخيص مبدئي: انقطاع إشارة الاتصال بين كارتة الوحدة الداخلية وكارتة الإنفرتر الخارجية.',
+      fix: 'الحل الهندسي: مراجعة كابل الكنترول والروزيتة وفحص دائرة الباور والاتصال في بوردة الوحدة الخارجية.',
+      price: 'التكلفة الاسترشادية: 450 – 1,650 ج.م حسب حالة الكابل أو البوردة',
+    },
+    fan: {
+      urgency: '⚠️ لا تشغّل الجهاز لتجنب تكوّن ثلج كثيف على المبخر',
+      cause: 'تشخيص مبدئي: ضعف كباستور المروحة أو توقف موتور مروحة البلاور الداخلي أو حساس السرعة.',
+      fix: 'الحل الهندسي: فحص كباستور المروحة وسوكيت الفيدباك وتنظيف التوربينة أو استبدال الموتور.',
+      price: 'التكلفة الاسترشادية: 450 – 1,250 ج.م (ضمان 6 – 12 شهراً)',
+    },
+    lamp: {
+      urgency: '🔍 يتطلب قراءة الكود الفرعي وفحص الكباستور والفريون',
+      cause: 'تشخيص مبدئي: تنبيه حماية بسبب اتساخ المكثف الخارجي، ضعف كباستور الكباس، أو نقص فريون.',
+      fix: 'الحل الهندسي: استخراج الكود التفصيلي، قياس سعة الكباستور بالميكروفاراد (µF)، وغسيل المكثف.',
+      price: 'التكلفة الاسترشادية: 450 – 850 ج.م',
+    },
+    hotair: {
+      urgency: '⚠️ افصل التبريد إذا كان الكباس يفصل كل دقيقتين',
+      cause: 'تشخيص مبدئي: تلف كباستور التشغيل (الأشهر في حر الصيف)، انسداد الكويل الخارجي بالأتربة، أو نقص فريون.',
+      fix: 'الحل الهندسي: قياس أمبير الضاغط وسعة الكباستور وضغط الفريون ومعالجة السبب في نفس الزيارة.',
+      price: 'التكلفة الاسترشادية: 450 – 1,400 ج.م حسب المكون',
+    },
+    water: {
+      urgency: '💧 افصل الكهرباء إذا كانت المياه قريبة من شاشة/كارتة التكييف',
+      cause: 'تشخيص مبدئي: انسداد حوض وخرطوم الصرف بالرواسب الجيلاتينية أو تكون ثلج على الكويل.',
+      fix: 'الحل الهندسي: تسليك خط الصرف بضغط النيتروجين، غسيل الحوض والتوربينة بالكيس الواقي، وضبط الميزان.',
+      price: 'التكلفة الاسترشادية: 400 – 600 ج.م شاملة الغسيل والتسليك',
+    },
+    noise: {
+      urgency: '🔧 فحص ميكانيكي لمنع كسر ريش المروحة أو قواعد الكباس',
+      cause: 'تشخيص مبدئي: عدم اتزان توربينة الهواء، تآكل رولمان بلي الموتور، أو تيبس قواعد كاوتش الكباس.',
+      fix: 'الحل الهندسي: تنظيف وموازنة البلاور وتغيير قواعد الكاوتش أو رولمان البلي الأصلي.',
+      price: 'التكلفة الاسترشادية: 400 – 850 ج.م',
+    },
+  };
+
+  const brandEl = document.getElementById('diag-brand');
+  const issueEl = document.getElementById('diag-issue');
+  const urgEl = document.getElementById('diag-urgency');
+  const causeEl = document.getElementById('diag-cause');
+  const fixEl = document.getElementById('diag-fix');
+  const priceEl = document.getElementById('diag-price');
+  const waBtn = document.getElementById('diag-wa-btn');
+
+  function updateDiag() {
+    if (!brandEl || !issueEl) return;
+    const brand = brandEl.value;
+    const key = issueEl.value;
+    const issueLabel = issueEl.options[issueEl.selectedIndex].text;
+    const info = diagData[key] || diagData.ec;
+
+    if (urgEl) urgEl.textContent = info.urgency;
+    if (causeEl) causeEl.textContent = info.cause;
+    if (fixEl) fixEl.textContent = info.fix;
+    if (priceEl) priceEl.textContent = info.price;
+    if (waBtn) {
+      const msg = `مرحباً شركة أركان، لدي تكييف ${brand} به مشكلة: (${issueLabel}). أرغب في حجز فني متخصص بالقطعة المناسبة.`;
+      waBtn.setAttribute('href', `https://wa.me/${whatsappNum}?text=${encodeURIComponent(msg)}`);
+    }
+  }
+
+  brandEl?.addEventListener('change', updateDiag);
+  issueEl?.addEventListener('change', updateDiag);
+  updateDiag();
+
+  // Cost Estimator Logic
+  const srvEl = document.getElementById('cost-service');
+  const qtyEl = document.getElementById('cost-qty');
+  const qtyLabel = document.getElementById('cost-qty-label');
+  const hpEl = document.getElementById('cost-hp');
+  const totalOut = document.getElementById('cost-total-out');
+  const noteOut = document.getElementById('cost-note-out');
+
+  const baseRates = {
+    wash: { min: 450, max: 550, note: 'يشمل غسيل الوحدتين بالكيس الواقي، التعقيم، تسليك الصرف، وفحص الفريون مجاناً.' },
+    install: { min: 950, max: 1200, note: 'يشمل تثبيت الحامل، التوصيل القياسي، وسحب الفاكيوم الكامل قبل فتح الفريون بضمان 12 شهراً.' },
+    move: { min: 1200, max: 1550, note: 'يشمل حبس الفريون (Pump Down)، الفك الآمن، وإعادة التركيب والاختبار.' },
+    freon410: { min: 1250, max: 1600, note: 'يشمل اختبار التسريب، سحب فاكيوم، وشحن فريون R410a أمريكي أصلي بالميزان الإلكتروني.' },
+    freon22: { min: 900, max: 1250, note: 'يشمل مراجعة الصواميل وضبط شحنة فريون R22 الأصلي وأمبير التشغيل.' },
+    piping: { min: 800, max: 1000, note: 'السعر بالمتر الطولي: نحاس جنوب أفريقي أصلي + عزل أرمافليكس + كنترول + صرف بضمان 5 سنوات.' },
+    inspect: { min: 250, max: 350, note: 'فحص رقمي شامل (تُخصم قيمة الكشف بالكامل عند تنفيذ الإصلاح مع أركان).' },
+  };
+
+  function updateCost() {
+    if (!srvEl || !qtyEl || !hpEl || !totalOut || !noteOut) return;
+    const srv = srvEl.value;
+    const qty = Math.max(1, Math.min(50, Number(qtyEl.value) || 1));
+    const hpMult = Number(hpEl.value) || 1;
+
+    if (qtyLabel) {
+      qtyLabel.textContent = srv === 'piping' ? 'طول المواسير بالمتر' : 'عدد الأجهزة';
+    }
+
+    const rate = baseRates[srv] || baseRates.wash;
+    const discount = srv !== 'piping' && qty >= 3 ? 0.82 : srv !== 'piping' && qty === 2 ? 0.92 : 1;
+    const minTotal = Math.round((rate.min * qty * hpMult * discount) / 25) * 25;
+    const maxTotal = Math.round((rate.max * qty * hpMult * discount) / 25) * 25;
+
+    totalOut.textContent = `${minTotal.toLocaleString('en-US')} – ${maxTotal.toLocaleString('en-US')} ج.م`;
+    noteOut.textContent =
+      discount < 1
+        ? `🎉 تم تطبيق خصم المجموعات (${Math.round((1 - discount) * 100)}%)! ${rate.note}`
+        : rate.note;
+  }
+
+  srvEl?.addEventListener('change', updateCost);
+  qtyEl?.addEventListener('input', updateCost);
+  hpEl?.addEventListener('change', updateCost);
+  updateCost();
+</script>

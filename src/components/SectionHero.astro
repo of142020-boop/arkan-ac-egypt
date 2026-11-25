@@ -1,0 +1,356 @@
+---
+import { heroContent } from "../data/site-content";
+---
+
+<section class="hero">
+  <!-- Main 2-column RTL Hero -->
+  <div class="hero__stage">
+    <!-- Iconic Figma Golden Arc + Building framed cleanly on the LEFT (RTL mirror) -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__sun-arc"></div>
+      <div class="hero__building-frame">
+        <img
+          src="/assets/figma/65bf5.png"
+          alt="مشاريع شركة أركان لصيانة وتركيب التكييف في مصر"
+          loading="eager"
+        />
+      </div>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="heading-1 hero__title">
+          <span class="hero__kicker">شركة أركان لصيانة وتركيب التكييف في مصر</span>
+          <span>{heroContent.titleLine1}</span>
+          <span>{heroContent.titleLine2}</span>
+        </h1>
+        <p class="text-lead hero__desc">{heroContent.description}</p>
+
+        <div class="hero__cta-row">
+          <button type="button" class="btn-gold btn-gold--lg" data-open-booking>
+            {heroContent.ctaLabel}
+          </button>
+          <a href="/tools" class="btn-outline">
+            تشخيص الأعطال وحاسبة التكلفة
+          </a>
+        </div>
+
+        <!-- Google Reviews Badge (RTL-aligned cleanly) -->
+        <div class="hero__rating">
+          <div class="google-badge-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 48 48">
+              <path
+                fill="#EA4335"
+                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+              />
+              <path
+                fill="#4285F4"
+                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+              />
+              <path
+                fill="#FBBC05"
+                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+              />
+              <path
+                fill="#34A853"
+                d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+              />
+            </svg>
+          </div>
+          <div class="hero__rating-info">
+            <span class="hero__rating-label">
+              {heroContent.googleRating.label}
+            </span>
+            <div class="hero__rating-row">
+              <strong class="hero__rating-score">
+                {heroContent.googleRating.score}
+              </strong>
+              <span class="hero__rating-stars" aria-label="تقييم 5 نجوم">
+                ★★★★★
+              </span>
+              <span class="hero__rating-count">
+                ({heroContent.googleRating.reviewsCount})
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Highlights Stats Bar (Pearl-20 #f1f0ee) -->
+  <div class="hero-stats">
+    <div class="hero-stats__inner">
+      {heroContent.highlights.map((item) => (
+        <div class="hero-stat">
+          <strong class="hero-stat__value" dir="ltr">
+            {item.value}
+            {item.suffix || ""}
+          </strong>
+          <span class="hero-stat__label">{item.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    width: 100%;
+    background-color: var(--pearl-10);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__stage {
+    position: relative;
+    width: 100%;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero__container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding: 72px 40px 84px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero__content {
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .hero__kicker {
+    display: inline-block;
+    align-self: flex-start;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: var(--bayou-110);
+    background-color: var(--bayou-20);
+    padding: 6px 16px;
+    border-radius: 9999px;
+    margin-bottom: 10px;
+  }
+
+  .hero__title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hero__desc {
+    max-width: 540px;
+    color: var(--ebony-100);
+  }
+
+  .hero__cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    margin-top: 6px;
+  }
+
+  .hero__rating {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 12px;
+    padding: 12px 18px;
+    background-color: var(--pearl-20);
+    border-radius: 18px;
+  }
+
+  .google-badge-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .hero__rating-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .hero__rating-label {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ebony-100);
+  }
+
+  .hero__rating-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero__rating-score {
+    font-family: var(--font-num);
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--sun-80);
+    line-height: 1;
+  }
+
+  .hero__rating-stars {
+    color: var(--sun-80);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+
+  .hero__rating-count {
+    font-size: 13px;
+    color: var(--ebony-100);
+  }
+
+  /* Left-side Golden Sun Arc + Building (cleanly isolated from right-side Arabic text) */
+  .hero__visual {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 47%;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .hero__sun-arc {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1400px;
+    height: 1400px;
+    border-radius: 9999px;
+    background-color: var(--sun-60);
+    box-shadow: var(--sun-circle-shadow);
+  }
+
+  .hero__building-frame {
+    position: absolute;
+    left: 0;
+    right: 10%;
+    top: 28px;
+    bottom: -120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .hero__building-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  /* Stats Bar */
+  .hero-stats {
+    width: 100%;
+    background-color: var(--pearl-20);
+    border-top: 1px solid rgba(55, 93, 108, 0.08);
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-stats__inner {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding: 36px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 220px));
+    gap: 32px;
+  }
+
+  .hero-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .hero-stat__value {
+    font-family: var(--font-num);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--bayou-110);
+  }
+
+  .hero-stat__label {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ebony-100);
+  }
+
+  @media (max-width: 1040px) {
+    .hero__stage {
+      min-height: auto;
+      flex-direction: column;
+    }
+
+    .hero__visual {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      border-bottom: 4px solid var(--pearl-20);
+    }
+
+    .hero__sun-arc {
+      width: 680px;
+      height: 680px;
+      right: 50%;
+      transform: translate(50%, -18%);
+    }
+
+    .hero__building-frame {
+      right: 0;
+      left: 0;
+      top: 16px;
+      bottom: -80px;
+    }
+
+    .hero__building-frame img {
+      max-width: 360px;
+      margin-inline: auto;
+    }
+
+    .hero__container {
+      padding: 40px 20px 48px;
+    }
+
+    .hero__content {
+      max-width: 100%;
+    }
+
+    .hero-stats__inner {
+      padding: 28px 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .hero-stat {
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-stat__value {
+      font-size: 32px;
+    }
+  }
+</style>

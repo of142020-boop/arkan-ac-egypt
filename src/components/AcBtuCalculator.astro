@@ -1,0 +1,202 @@
+---
+---
+
+<section class="section section--pearl20">
+  <div class="container">
+    <div class="btu-card">
+      <div class="btu-card__head">
+        <span class="section-eyebrow">أداة هندسية تفاعلية</span>
+        <h2 class="heading-2">حاسبة قدرة التكييف المناسبة لمساحة غرفتك في جو مصر (حصان & BTU)</h2>
+        <p class="text-body">
+          أدخل أبعاد الغرفة وظروف التعرض للشمس أو الدور الأخير لحساب القدرة التبريدية الدقيقة وفق معايير صيف مصر الحار.
+        </p>
+      </div>
+
+      <form class="btu-form" id="arkan-btu-calc" onsubmit="return false;">
+        <div class="btu-inputs">
+          <label class="btu-field">
+            <span>مساحة الغرفة بالمتر المربع (م²)</span>
+            <input type="number" id="btu-area" min="6" max="120" value="18" required />
+          </label>
+
+          <label class="btu-field">
+            <span>طبيعة الدور والتعرض للشمس</span>
+            <select id="btu-sun">
+              <option value="1">دور متكرر — ظل أو شمس خفيفة (عادي)</option>
+              <option value="1.15">واجهة قبلية / غربية مشمسة طوال اليوم</option>
+              <option value="1.25">دور أخير (سطح مباشر) أو واجهة زجاجية كبيرة</option>
+            </select>
+          </label>
+
+          <label class="btu-field">
+            <span>نوع الاستخدام</span>
+            <select id="btu-usage">
+              <option value="1">غرفة نوم / معيشة منزلية</option>
+              <option value="1.12">ريسبشن مفتوح / غرفة طعام</option>
+              <option value="1.22">مكتب إداري / عيادة / محل تجاري</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="btu-result" id="btu-result-box">
+          <div class="btu-result__main">
+            <span class="btu-result__label">القدرة الهندسية الموصى بها:</span>
+            <strong class="btu-result__hp" id="btu-hp-out">2.25 حصان (18,000 BTU)</strong>
+            <p class="btu-result__note" id="btu-note-out">
+              مناسب تماماً لمساحة 18 م² في الأجواء المصرية القياسية مع توفير مثالي في استهلاك الكهرباء عند اختيار موديل إنفرتر.
+            </p>
+          </div>
+          <button type="button" class="btn-gold btn-gold--md" data-open-booking>
+            اطلب معاينة وتأسيس لهذه القدرة
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .btu-card {
+    background-color: var(--pearl-10);
+    border-radius: var(--radius-card);
+    padding: 40px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .btu-card__head {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btu-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .btu-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--bayou-110);
+  }
+
+  .btu-field input,
+  .btu-field select {
+    padding: 14px 16px;
+    border-radius: 16px;
+    border: 1.5px solid var(--pearl-40);
+    background-color: var(--pearl-20);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ebony-130);
+  }
+
+  .btu-result {
+    margin-top: 20px;
+    background-color: var(--bayou-120);
+    color: var(--pearl-10);
+    border-radius: 22px;
+    padding: 28px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .btu-result__main {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 620px;
+  }
+
+  .btu-result__label {
+    color: var(--sun-60);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .btu-result__hp {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--pearl-10);
+  }
+
+  .btu-result__note {
+    font-size: 14.5px;
+    color: var(--pearl-40);
+  }
+
+  @media (max-width: 900px) {
+    .btu-card {
+      padding: 24px;
+    }
+
+    .btu-inputs {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  const areaInput = document.getElementById('btu-area') as HTMLInputElement | null;
+  const sunSelect = document.getElementById('btu-sun') as HTMLSelectElement | null;
+  const usageSelect = document.getElementById('btu-usage') as HTMLSelectElement | null;
+  const hpOut = document.getElementById('btu-hp-out');
+  const noteOut = document.getElementById('btu-note-out');
+
+  function updateCalc() {
+    if (!areaInput || !sunSelect || !usageSelect || !hpOut || !noteOut) return;
+    const area = Math.max(6, Number(areaInput.value) || 12);
+    const sunFactor = Number(sunSelect.value) || 1;
+    const usageFactor = Number(usageSelect.value) || 1;
+
+    // Standard Egyptian thermal load: ~800 BTU per m² adjusted by sun & usage
+    const rawBtu = Math.round(area * 820 * sunFactor * usageFactor);
+
+    let label = '';
+    let recommendation = '';
+    if (rawBtu <= 12500) {
+      label = '1.5 حصان (12,000 BTU)';
+      recommendation = `مثالي لغرفة بمساحة ${area} م² — نوصي بمواسير نحاس قياسية مع سحب فاكيوم كامل عند التركيب.`;
+    } else if (rawBtu <= 18500) {
+      label = '2.25 حصان (18,000 BTU)';
+      recommendation = `الحمل الحراري التقديري (${rawBtu.toLocaleString('en-US')} BTU) يتناسب بدقة مع تكييف 2.25 حصان إنفرتر دون إجهاد للكباس.`;
+    } else if (rawBtu <= 24500) {
+      label = '3 حصان (24,000 BTU)';
+      recommendation = `الحمل الحراري (${rawBtu.toLocaleString('en-US')} BTU) يتطلب قدرة 3 حصان لضمان تبريد سريع في ذروة شهر يوليو وأغسطس.`;
+    } else if (rawBtu <= 32500) {
+      label = '4 حصان (30,000 - 32,000 BTU)';
+      recommendation = `للمساحات الواسعة (${area} م²) يفضل تكييف 4 حصان سبليت أو كونسيلد مخفي لتوزيع متجانس للهواء.`;
+    } else if (rawBtu <= 40000) {
+      label = '5 حصان (36,000 - 40,000 BTU)';
+      recommendation = `ننصح بتكييف 5 حصان كونسيلد أو فري ستاند أو تقسيم المساحة على وحدتين سبليت لزيادة الكفاءة.`;
+    } else {
+      const tons = (rawBtu / 12000).toFixed(1);
+      label = `نظام كونسيلد متعدد أو مركزي VRF (~${tons} طن تبريد)`;
+      recommendation = `المساحة تتطلب معاينة هندسية مجانية من أركان لتوزيع الأحمال على وحدتين أو نظام تكييف مركزي موفر للطاقة.`;
+    }
+
+    hpOut.textContent = label;
+    noteOut.textContent = recommendation;
+  }
+
+  areaInput?.addEventListener('input', updateCalc);
+  sunSelect?.addEventListener('change', updateCalc);
+  usageSelect?.addEventListener('change', updateCalc);
+  updateCalc();
+</script>

@@ -1,0 +1,211 @@
+---
+import ArkanLogo from "./ArkanLogo.astro";
+import { siteSeoConfig, keywordClusters } from "../data/seo-keywords";
+import { brandsData } from "../data/brands-data";
+import { areasData } from "../data/areas-data";
+import { guidesData } from "../data/guides-data";
+---
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-columns">
+      <!-- Brand Column -->
+      <div class="footer-col footer-col--brand">
+        <a href="/" aria-label={siteSeoConfig.brandFullName}>
+          <ArkanLogo variant="light" />
+        </a>
+        <p class="footer-desc">
+          شركة أركان الهندسية لصيانة وتركيب وتأسيس وغسيل وشحن فريون جميع أنواع
+          التكييفات السكنية والتجارية في مصر بقطع غيار أصلية وضمان رسمي معتمد.
+        </p>
+        <div class="footer-contact-meta">
+          <span>📍 {siteSeoConfig.address}</span>
+          <span>
+            📞 الخط الساخن: {siteSeoConfig.hotline} — موبايل:{" "}
+            {siteSeoConfig.phone}
+          </span>
+        </div>
+      </div>
+
+      <!-- Services Column -->
+      <div class="footer-col">
+        <h4 class="footer-col__title">خدمات التكييف</h4>
+        <ul class="footer-list">
+          {keywordClusters.slice(0, 6).map((c) => (
+            <li>
+              <a href={`/services/${c.slug}`}>{c.category}</a>
+            </li>
+          ))}
+          <li>
+            <a href="/services" class="footer-more">
+              جميع الخدمات ←
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Brands Column -->
+      <div class="footer-col">
+        <h4 class="footer-col__title">صيانة الماركات</h4>
+        <ul class="footer-list">
+          {brandsData.slice(0, 6).map((b) => (
+            <li>
+              <a href={`/brands/${b.slug}`}>صيانة تكييف {b.nameAr}</a>
+            </li>
+          ))}
+          <li>
+            <a href="/brands" class="footer-more">
+              جميع الماركات ←
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Areas & Guides Column -->
+      <div class="footer-col">
+        <h4 class="footer-col__title">المناطق والأدلة</h4>
+        <ul class="footer-list">
+          {areasData.slice(0, 4).map((a) => (
+            <li>
+              <a href={`/areas/${a.slug}`}>صيانة تكييف {a.nameAr}</a>
+            </li>
+          ))}
+          {guidesData.slice(0, 2).map((g) => (
+            <li>
+              <a href={`/guides/${g.slug}`}>{g.category}</a>
+            </li>
+          ))}
+          <li>
+            <a href="/areas" class="footer-more">
+              كل مناطق مصر ←
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © {new Date().getFullYear()} {siteSeoConfig.brandFullName}. جميع الحقوق
+        محفوظة.
+      </p>
+      <div class="footer-bottom__links">
+        <a href="/corporate-contracts">عقود صيانة الشركات</a>
+        <a href="/tools">حاسبات وتشخيص الأعطال</a>
+        <a href="/guides/ac-maintenance-prices-egypt">دليل الأسعار 2026</a>
+        <a href="/sitemap.xml">خريطة الموقع</a>
+        <a href="/llms.txt">LLMs.txt</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    width: 100%;
+    background-color: var(--ebony-130);
+    color: var(--pearl-50);
+  }
+
+  .site-footer__inner {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding: 64px 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .footer-columns {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 36px;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--pearl-50);
+    max-width: 340px;
+  }
+
+  .footer-contact-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--pearl-20);
+  }
+
+  .footer-col__title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--sun-60);
+  }
+
+  .footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .footer-list a {
+    color: var(--pearl-40);
+    transition: color 0.2s ease;
+  }
+
+  .footer-list a:hover {
+    color: var(--sun-60);
+  }
+
+  .footer-more {
+    color: var(--sun-60) !important;
+    font-weight: 700;
+  }
+
+  .footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid rgba(250, 250, 249, 0.12);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  .footer-bottom__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-bottom__links a:hover {
+    color: var(--sun-60);
+  }
+
+  @media (max-width: 960px) {
+    .site-footer__inner {
+      padding: 48px 20px 28px;
+    }
+
+    .footer-columns {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .footer-columns {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

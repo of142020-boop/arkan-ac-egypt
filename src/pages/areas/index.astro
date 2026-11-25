@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { areasData } from '../../data/areas-data';
+import { siteSeoConfig } from '../../data/seo-keywords';
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'مناطق التغطية في مصر', url: '/areas' },
+];
+
+const areaHubFaqs = [
+  {
+    question: 'كيف تصل سيارات صيانة أركان خلال 45 إلى 90 دقيقة في زحام القاهرة والجيزة؟',
+    answer:
+      'نعتمد على توزيع جغرافي لامركزي لنقاط تمركز المهندسين والسيارات المجهزة في شرق القاهرة (مدينة نصر والتجمع الخامس ومصر الجديدة)، وجنوب القاهرة (المعادي والمقطم)، وغرب القاهرة والجيزة (المهندسين والشيخ زايد و6 أكتوبر)، بالإضافة إلى فرع الإسكندرية والساحل الشمالي.',
+  },
+  {
+    question: 'هل تختلف أسعار الصيانة أو الكشف من منطقة لأخرى؟',
+    answer:
+      'لا؛ تلتزم شركة أركان بقائمة أسعار موحدة وشفافة في جميع أحياء القاهرة الكبرى والجيزة والإسكندرية بدون أي رسوم انتقال خفية.',
+  },
+];
+---
+
+<BaseLayout
+  title={`مناطق خدمة صيانة وتركيب التكييف في القاهرة والجيزة والإسكندرية | ${siteSeoConfig.brandFullName}`}
+  description="تغطية فورية لخدمات صيانة وتركيب وتأسيس وغسيل التكييف في مدينة نصر، التجمع الخامس، الشيخ زايد، 6 أكتوبر، المعادي، مصر الجديدة، المهندسين، والإسكندرية."
+  canonicalPath="/areas"
+  breadcrumbs={breadcrumbs}
+  pageFaqs={areaHubFaqs}
+>
+  <Navbar activePath="/areas" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container hub-hero">
+        <span class="section-eyebrow">أسطول ميداني مجهز بالكامل</span>
+        <h1 class="heading-1">مناطق خدمة صيانة وتركيب التكييف في مصر</h1>
+        <p class="text-lead hub-hero__desc">
+          اختر منطقتك للتعرف على الأحياء والكمبوندات المغطاة، متوسط زمن استجابة الفنيين، والحلول المخصصة لطبيعة المباني والمناخ في منطقتك.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="areas-grid">
+          {
+            areasData.map((area) => (
+              <a href={`/areas/${area.slug}`} class="area-card">
+                <div class="area-card__top">
+                  <span class="gov-badge">محافظة {area.governorate}</span>
+                  <span class="time-badge">⏱ وصول خلال {area.arrivalTime}</span>
+                </div>
+                <h2 class="heading-3">صيانة وتركيب تكييف {area.nameAr}</h2>
+                <p class="text-sm">{area.heroSubtitle}</p>
+                <span class="area-cta">تفاصيل التغطية والحجز في {area.nameAr} ←</span>
+              </a>
+            ))
+          }
+        </div>
+
+        <div class="hub-editorial">
+          <h2 class="heading-2">تغطية هندسية تراعي الطبيعة المناخية والمعمارية لكل منطقة في مصر</h2>
+          <p class="text-body">
+            تختلف تحديات التشغيل والصيانة لأجهزة التكييف في مصر باختلاف الموقع الجغرافي؛ ففي المدن العمرانية الجديدة مثل <a href="/areas/fifth-settlement">التجمع الخامس والقاهرة الجديدة</a> و<a href="/areas/sheikh-zayed">الشيخ زايد</a> و<a href="/areas/october">6 أكتوبر</a> تزداد الحاجة لتأسيس <a href="/services/central-concealed-ac">التكييف الكونسيلد والـ VRF</a> وحماية كروت الإنفرتر من العواصف الترابية وتذبذب الجهد، بينما تتطلب المناطق الساحلية في <a href="/areas/alexandria">الإسكندرية والساحل الشمالي</a> معالجة خاصة ضد تآكل مواسير النحاس وزعانف المكثف بفعل الرطوبة والأملاح البحرية.
+          </p>
+          <p class="text-body">
+            أما في الأحياء الحيوية ذات الكثافة السكنية والتجارية العالية مثل <a href="/areas/nasr-city">مدينة نصر</a> و<a href="/areas/heliopolis">مصر الجديدة</a> و<a href="/areas/maadi">المعادي</a> و<a href="/areas/mohandessin">المهندسين والدقي والزمالك</a>، فنوفر مواعيد صباحية ومسائية مرنة تناسب العيادات الطبية والشركات والوحدات السكنية مع التزام صارم بالنظافة الكاملة والهدوء أثناء العمل.
+          </p>
+        </div>
+
+        <div class="faq-list" style="margin-top: 48px;">
+          {
+            areaHubFaqs.map((faq, idx) => (
+              <details class="faq-item" open={idx === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .hub-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .hub-hero__desc { max-width: 760px; }
+  .areas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .area-card { background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 28px; display: flex; flex-direction: column; gap: 12px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .area-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
+  .area-card__top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .gov-badge { background-color: var(--sun-60); color: var(--ebony-130); font-family: var(--font-heading); font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 9999px; }
+  .time-badge { font-family: var(--font-heading); font-size: 13px; font-weight: 600; color: var(--bayou-110); }
+  .area-cta { margin-top: auto; font-family: var(--font-heading); font-weight: 700; font-size: 14px; color: var(--bayou-110); }
+  .hub-editorial { margin-top: 56px; background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 36px; display: flex; flex-direction: column; gap: 16px; }
+  .hub-editorial .text-body { color: var(--ebony-130); line-height: 1.9; }
+  .hub-editorial a { color: var(--bayou-110); font-weight: 700; text-decoration: underline; }
+  @media (max-width: 860px) { .areas-grid { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,51 @@
+---
+import { contactContent } from '../data/site-content';
+import { siteSeoConfig } from '../data/seo-keywords';
+---
+
+<section id="contact" class="section section--bayou">
+  <div class="container contact-inner">
+    <h2 class="heading-2 contact-title">{contactContent.title}</h2>
+    <p class="text-lead contact-subtitle">{contactContent.subtitle}</p>
+    <div class="contact-actions">
+      <button type="button" class="btn-gold btn-gold--lg" data-open-booking>
+        {contactContent.ctaLabel}
+      </button>
+      <a
+        href={`https://wa.me/${siteSeoConfig.whatsapp}?text=${encodeURIComponent('مرحباً شركة أركان، أرغب في حجز موعد صيانة أو تركيب تكييف')}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-outline btn-outline--light"
+      >
+        تواصل عبر واتساب مباشرة
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .contact-title {
+    max-width: 740px;
+  }
+
+  .contact-subtitle {
+    max-width: 680px;
+  }
+
+  .contact-actions {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+</style>

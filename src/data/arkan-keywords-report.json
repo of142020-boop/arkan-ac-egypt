@@ -1,0 +1,5613 @@
+{
+  "generatedAt": "2026-11-24T22:19:05.396Z",
+  "market": "Egypt (2818)",
+  "language": "Arabic (1019)",
+  "totals": {
+    "allKeywords": 2673,
+    "allMonthlyVolume": 190270,
+    "serviceCoreKeywords": 1840,
+    "serviceCoreMonthlyVolume": 91180
+  },
+  "serviceClusters": [
+    {
+      "group": "صيانة ماركات التكييف في مصر",
+      "count": 226,
+      "totalVolume": 28020,
+      "topKeywords": [
+        {
+          "keyword": "صيانة تكييف شارب",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 5.108421,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "صيانة تكييف كاريير",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 21.725248,
+          "bidHigh": 72.417405
+        },
+        {
+          "keyword": "صيانة تكييفات شارب",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 5.108421,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "صيانه تكييف كاريير",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 21.725248,
+          "bidHigh": 72.417405
+        },
+        {
+          "keyword": "رقم خدمة عملاء lg",
+          "volume": 1300,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.448775,
+          "bidHigh": 187.289963
+        },
+        {
+          "keyword": "رقم الصيانة lg",
+          "volume": 1000,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 16.760297,
+          "bidHigh": 104.026559
+        },
+        {
+          "keyword": "خدمة عملاء شارب تكييف",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "خدمة عملاء شارب للتكييفات",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "خدمه عملاء شارب للتكييف",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "خدمه عملاء شارب للتكييفات",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "صيانة تكييف ميديا",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.467027,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "صيانة تكييفات ميديا",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.467027,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "صيانة يونيون تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 18.945824,
+          "bidHigh": 82.950535
+        },
+        {
+          "keyword": "توكيل تكييف كاريير",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 4.492176,
+          "bidHigh": 60.065642
+        },
+        {
+          "keyword": "خدمة عملاء فريش تكييف",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 6.652588,
+          "bidHigh": 36.424071
+        },
+        {
+          "keyword": "خدمه عملاء فريش للتكييفات",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 6.652588,
+          "bidHigh": 36.424071
+        },
+        {
+          "keyword": "صيانة شارب تكييف",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.685241,
+          "bidHigh": 39.434459
+        },
+        {
+          "keyword": "صيانة شارب للتكييف",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.685241,
+          "bidHigh": 39.434459
+        },
+        {
+          "keyword": "رقم خدمة عملاء شارب للتكييف",
+          "volume": 480,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.886317,
+          "bidHigh": 158.833908
+        },
+        {
+          "keyword": "رقم خدمة عملاء شارب للتكييفات",
+          "volume": 480,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.886317,
+          "bidHigh": 158.833908
+        },
+        {
+          "keyword": "رقم خدمه عملاء شارب للتكييفات",
+          "volume": 480,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.886317,
+          "bidHigh": 158.833908
+        },
+        {
+          "keyword": "خدمة عملاء تكييف كاريير",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 3.989296,
+          "bidHigh": 20.73766
+        },
+        {
+          "keyword": "صيانة تكييف يونيون اير",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 20.32862,
+          "bidHigh": 64.16619
+        },
+        {
+          "keyword": "رقم صيانة تكييف ال جي",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "رقم صيانة تكييف شارب",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 19.020407,
+          "bidHigh": 82.950535
+        },
+        {
+          "keyword": "رقم صيانة تكييف كاريير",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": 16.62122,
+          "bidHigh": 43.39376
+        },
+        {
+          "keyword": "رقم صيانه تكييفات شارب",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 19.020407,
+          "bidHigh": 82.950535
+        },
+        {
+          "keyword": "توكيل تكييفات شارب",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 0.516494,
+          "bidHigh": 15.503397
+        },
+        {
+          "keyword": "توكيل شارب تكييف",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 0.963992,
+          "bidHigh": 20.272317
+        },
+        {
+          "keyword": "صيانة تكييف فريش",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.070001,
+          "bidHigh": 65.09064
+        }
+      ]
+    },
+    {
+      "group": "صيانة وإصلاح التكييف العام",
+      "count": 170,
+      "totalVolume": 16640,
+      "topKeywords": [
+        {
+          "keyword": "صيانة التكييفات",
+          "volume": 3600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.401747,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "صيانة تكييف",
+          "volume": 3600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.401747,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "فني التكييف",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.325319,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "فنى تكييف",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.325319,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "شركة تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.372202,
+          "bidHigh": 44.734898
+        },
+        {
+          "keyword": "شركه تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.372202,
+          "bidHigh": 44.734898
+        },
+        {
+          "keyword": "شركة صيانة تكييف",
+          "volume": 480,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.525681,
+          "bidHigh": 48.660786
+        },
+        {
+          "keyword": "صيانة مكيف",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.511741,
+          "bidHigh": 57.785897
+        },
+        {
+          "keyword": "تصليح تكييف",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.528457,
+          "bidHigh": 53.272024
+        },
+        {
+          "keyword": "صيانة تكييف كارير",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 21.736693,
+          "bidHigh": 64.834508
+        },
+        {
+          "keyword": "تصليح مكيف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.445927,
+          "bidHigh": 44.784692
+        },
+        {
+          "keyword": "فنى تكييف وتبريد",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.471981,
+          "bidHigh": 44.064519
+        },
+        {
+          "keyword": "شحن تكييف",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة التكييف",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 20.73766,
+          "bidHigh": 48.323074
+        },
+        {
+          "keyword": "صيانة تكييف باور",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانه التكييفات",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 20.73766,
+          "bidHigh": 48.323074
+        },
+        {
+          "keyword": "صيانه تكييف باور",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تبريد وتكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مركز صيانة تكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.926205,
+          "bidHigh": 32.006098
+        },
+        {
+          "keyword": "اصلاح تكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركة باور للتكييفات",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": 17.442067,
+          "bidHigh": 43.052359
+        },
+        {
+          "keyword": "فنى مكيفات",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 8.897022,
+          "bidHigh": 96.102478
+        },
+        {
+          "keyword": "صيانة تكييف ترين",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني صيانة تكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فنى صيانه تكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "الخط الساخن لشركة باور للتكييف",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف امريكول",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف شباك",
+          "volume": 40,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة مكيف كارير",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 17.76573,
+          "bidHigh": 72.435033
+        },
+        {
+          "keyword": "صيانة مكيفات كارير",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 17.76573,
+          "bidHigh": 72.435033
+        }
+      ]
+    },
+    {
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "count": 558,
+      "totalVolume": 16140,
+      "topKeywords": [
+        {
+          "keyword": "تكييف كونسيلد",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 6.29497,
+          "bidHigh": 115.616869
+        },
+        {
+          "keyword": "تكييفات كونسيلد",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 6.29497,
+          "bidHigh": 115.616869
+        },
+        {
+          "keyword": "تكييف المركزي",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.256539,
+          "bidHigh": 57.050101
+        },
+        {
+          "keyword": "للتكييف المركزي",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.256539,
+          "bidHigh": 57.050101
+        },
+        {
+          "keyword": "تكييف مركزي",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 12.498216,
+          "bidHigh": 56.332965
+        },
+        {
+          "keyword": "تكييفات مركزية",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 12.498216,
+          "bidHigh": 56.332965
+        },
+        {
+          "keyword": "تكييف مركزي للمنزل",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 7.591955,
+          "bidHigh": 15.553245
+        },
+        {
+          "keyword": "تكييف مركزي منزلي",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 7.591955,
+          "bidHigh": 15.553245
+        },
+        {
+          "keyword": "سعر التكييف المركزي",
+          "volume": 320,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 8.522425,
+          "bidHigh": 98.080691
+        },
+        {
+          "keyword": "التكييف المركزى",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 10.978458,
+          "bidHigh": 59.806039
+        },
+        {
+          "keyword": "الكونسيلد",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 3.898495,
+          "bidHigh": 203.675826
+        },
+        {
+          "keyword": "تكييف كونسيلد ٥ حصان",
+          "volume": 210,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 4.187714,
+          "bidHigh": 197.006965
+        },
+        {
+          "keyword": "مفتاح التكييف المركزي",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مفتاح مكيف مركزي",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف vrf",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 7.340705,
+          "bidHigh": 35.630887
+        },
+        {
+          "keyword": "تكييف كونسيلد ٣ حصان",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 3.900231,
+          "bidHigh": 69.679041
+        },
+        {
+          "keyword": "دكتات تكييف",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شكل التكييف المركزي",
+          "volume": 140,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار التكييف المركزى",
+          "volume": 110,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 10.044841,
+          "bidHigh": 51.790615
+        },
+        {
+          "keyword": "الكونسيلد التكييف",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركة تكييف مركزي",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.401747,
+          "bidHigh": 64.683769
+        },
+        {
+          "keyword": "طريقة تشغيل المكيف المركزي",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مكيف كونسيلد",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر تكييف المركزي",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف مركزي",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 17.212406,
+          "bidHigh": 67.327751
+        },
+        {
+          "keyword": "مكيف مركزي كارير",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب التكييف الكونسيلد",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف كونسيلد",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف الدكت",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف مركزي للشقق",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "count": 345,
+      "totalVolume": 13560,
+      "topKeywords": [
+        {
+          "keyword": "اعطال التكييف الشارب",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 5.108421,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "اعطال تكييف ميديا",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 12.467027,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "اعطال يونيون تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 18.945824,
+          "bidHigh": 82.950535
+        },
+        {
+          "keyword": "اعطال تكييف يونيون f1",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال التكييف الكارير",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 21.736693,
+          "bidHigh": 64.834508
+        },
+        {
+          "keyword": "اعطال تكييف كارير",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 21.736693,
+          "bidHigh": 64.834508
+        },
+        {
+          "keyword": "عطل e5 تكييف يونيون",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال التكييف يونيون",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 37.951911,
+          "bidHigh": 77.983197
+        },
+        {
+          "keyword": "سعر كباس تكييف 3 حصان",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف ال جي",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 21.729805,
+          "bidHigh": 103.475349
+        },
+        {
+          "keyword": "اعطال تكييف باور",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف سامسونج",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "رموز اعطال التكييف",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر كباس تكييف 1.5 حصان",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عطل e3 تكييف يونيون",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عطل ec تكييف كارير",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف تورنيدو",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف يونيون e5",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر كباس تكييف 2.25 حصان شارب",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف كاريير القديم",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف lg",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 30.444194,
+          "bidHigh": 115.687926
+        },
+        {
+          "keyword": "اعطال شارب انفرتر",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر كباس تكييف 3 حصان شارب",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كتالوج اعطال تكييف كاريير كونسيلد",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار كباس تكييف 1.5 حصان",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار كباس تكييف 2.25 حصان",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اصلاح اعطال تكييف يونيون e3",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "أعطال التكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال التكييفات",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف جرى",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "تنظيف وغسيل التكييف",
+      "count": 216,
+      "totalVolume": 6910,
+      "topKeywords": [
+        {
+          "keyword": "تنظيف التكييف",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.97552,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "تنظيف التكييفات",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.97552,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "تنظيف المكيف",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.97552,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "تنظيف تكييف شارب 1.5 حصان",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كيس غسيل التكييف",
+          "volume": 260,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طرق تنظيف التكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقه تنظيف تكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فلتر مكيف شباك",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقة غسيل تكييف شارب الوحدة الخارجية",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "غسيل التكييف",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف شارب 2.25 حصان",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "غسيل التكييفات",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "غسيل تكييف",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركات تنظيف مكيفات",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقة غسيل التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقه غسيل التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف التكييف في المنزل",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كيفية تنظيف التكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف التكييف الشارب",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف المكيف الشباك",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر غسيل التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كيفية غسيل التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف التكييف بالبلاور",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف الوحدة الداخلية للتكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف شارب ٣ حصان",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف كاريير optimax",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف فلتر التكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف فلتر التكييف شارب",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف فلتر تكييف شارب",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "التركيب والتأسيس والفك والنقل",
+      "count": 218,
+      "totalVolume": 6580,
+      "topKeywords": [
+        {
+          "keyword": "تركيب تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.456603,
+          "bidHigh": 36.253425
+        },
+        {
+          "keyword": "تأسيس تكييف",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 14.713142,
+          "bidHigh": 32.54532
+        },
+        {
+          "keyword": "تأسيس مواسير التكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 14.476592,
+          "bidHigh": 30.069597
+        },
+        {
+          "keyword": "تركيب تكييف كاريير",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 4.475306,
+          "bidHigh": 133.000518
+        },
+        {
+          "keyword": "تركيب مكيف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.270236,
+          "bidHigh": 77.25505
+        },
+        {
+          "keyword": "تركيب تكييف شارب",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عزل مواسير التكييف",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف فريش",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.972618,
+          "bidHigh": 101.393751
+        },
+        {
+          "keyword": "تركيب تكييف ميديا",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 5.93453,
+          "bidHigh": 56.182877
+        },
+        {
+          "keyword": "فك وتركيب مكيفات سبليت",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب مفتاح التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تغطية مواسير التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر تركيب التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": 6.464314,
+          "bidHigh": 27.132165
+        },
+        {
+          "keyword": "طريقة تركيب مكيف سبلت في 12 خطوة بالصور فقط",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تركيب تكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.647319,
+          "bidHigh": 33.895408
+        },
+        {
+          "keyword": "مقاسات مواسير التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب مكيف سبليت",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 29.52929,
+          "bidHigh": 98.912061
+        },
+        {
+          "keyword": "رقم تركيب تكييف شارب",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر عزل مواسير التكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عزل مواسير النحاس للمكيفات السبلت",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تاسيس السبلت",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تاسيس مكيفات",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة تركيب التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر متر النحاس للتكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": 15.216727,
+          "bidHigh": 15.53719
+        },
+        {
+          "keyword": "عزل مواسير التكييف الاسبليت",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فك وتركيب التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 7.703314,
+          "bidHigh": 29.83321
+        },
+        {
+          "keyword": "فك وتركيب تكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 7.703314,
+          "bidHigh": 29.83321
+        },
+        {
+          "keyword": "تاسيس المكيف السبلت",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب التكييف الاسبليت",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف يونيون",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "شحن الفريون وكشف التسريب",
+      "count": 56,
+      "totalVolume": 1860,
+      "topKeywords": [
+        {
+          "keyword": "شحن فريون التكييف",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 22.484639,
+          "bidHigh": 36.232162
+        },
+        {
+          "keyword": "شحن فريون تكييف",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 22.484639,
+          "bidHigh": 36.232162
+        },
+        {
+          "keyword": "سعر شحن فريون التكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": 5.179045,
+          "bidHigh": 34.596109
+        },
+        {
+          "keyword": "تكلفة شحن فريون التكييف",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مكيف الفريون",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة شحن فريون تكييف 1.5 حصان",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحن الفريون للتكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مدة شحن فريون التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار شحن فريون التكييف",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "انواع فريون التكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شحن التكييف بالفريون",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسباب تسريب الفريون من التكييف",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تسريب فريون التكييف",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تسريب الفريون من التكييف",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحن التكييف بالفريون",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسباب تسريب فريون التكييف",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة شحن التكييف بالفريون",
+          "volume": 20,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر التكييف المحمول بالفريون شارب",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شحن فريون 410",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار تعبئة الفريون للمكيفات",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار شحن الفريون",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار فريون المكيفات",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "التكييف بيسرب فريون",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب مكيف فريون",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تسريب غاز الفريون",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة شحن فريون تكييف كاريير",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر تعبئة فريون المكيف السبلت",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحن فريون التكييف 2020",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحن فريون تكييف شارب",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحنة الفريون",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "المناطق والمحافظات في مصر",
+      "count": 46,
+      "totalVolume": 1430,
+      "topKeywords": [
+        {
+          "keyword": "صيانة تكييف مدينة نصر",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.949204,
+          "bidHigh": 35.703843
+        },
+        {
+          "keyword": "صيانه تكييفات اكتوبر",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف التجمع الخامس",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 20.73766,
+          "bidHigh": 35.419885
+        },
+        {
+          "keyword": "صيانة تكييف الشيخ زايد",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف كاريير بالاسكندريه carrier",
+          "volume": 90,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف المعادي",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف 6 اكتوبر",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.442564,
+          "bidHigh": 30.623735
+        },
+        {
+          "keyword": "صيانة تكييف الاسكندرية",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف مدينة نصر",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": 13.411753,
+          "bidHigh": 41.565341
+        },
+        {
+          "keyword": "فنى تكييف الشيخ زايد",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.343851,
+          "bidHigh": 46.206
+        },
+        {
+          "keyword": "صيانة تكييف المهندسين",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف مصر الجديدة",
+          "volume": 30,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف الاسكندرية",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف الهرم",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف زهراء مدينة نصر",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييفات في اكتوبر",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف التجمع الخامس",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 9.646616,
+          "bidHigh": 26.879063
+        },
+        {
+          "keyword": "ارقام مهندسين تكييف",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف اكتوبر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تصليح مكيفات 6 اكتوبر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تصليح مكيفات مدينة نصر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف شارب اسكندرية",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف كاريير اسكندرية",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف كاريير الاسكندرية",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل lg التجمع الخامس",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل lg فيصل",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل unionaire بالاسكندرية",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركات تكييف بالمعادى",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركات تكييف فى مدينة نصر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف اسكندرية",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "أسعار خدمات التكييف",
+      "count": 5,
+      "totalVolume": 40,
+      "topKeywords": [
+        {
+          "keyword": "اسعار صيانة التكييف",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة صيانة التكييف",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار صيانة التكييف في مصر",
+          "volume": 0,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار صيانة التكييفات",
+          "volume": 0,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر صيانة التكييف المنزلي",
+          "volume": 0,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    }
+  ],
+  "allClusters": [
+    {
+      "group": "صيانة ماركات التكييف في مصر",
+      "count": 594,
+      "totalVolume": 66130,
+      "topKeywords": [
+        {
+          "keyword": "سعر تكييفات شارب 1.5 حصان",
+          "volume": 4400,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.21931,
+          "bidHigh": 10.407071
+        },
+        {
+          "keyword": "سعر تكييف كاريير 1.5 حصان بارد فقط",
+          "volume": 3600,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 2.607205,
+          "bidHigh": 51.790615
+        },
+        {
+          "keyword": "ريموت التكييف الشارب",
+          "volume": 2900,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 1.084844,
+          "bidHigh": 6.068888
+        },
+        {
+          "keyword": "سعر تكييف كاريير 1.5 حصان",
+          "volume": 1900,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.62694,
+          "bidHigh": 10.103911
+        },
+        {
+          "keyword": "اسعار التكييف الفريش",
+          "volume": 1600,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.541282,
+          "bidHigh": 17.678834
+        },
+        {
+          "keyword": "اسعار التكييفات الفريش",
+          "volume": 1600,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.541282,
+          "bidHigh": 17.678834
+        },
+        {
+          "keyword": "صيانة تكييف شارب",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 5.108421,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "صيانة تكييف كاريير",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 21.725248,
+          "bidHigh": 72.417405
+        },
+        {
+          "keyword": "صيانة تكييفات شارب",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 5.108421,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "صيانه تكييف كاريير",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 21.725248,
+          "bidHigh": 72.417405
+        },
+        {
+          "keyword": "تكييف ميديا 1.5 حصان بارد فقط",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 1.082403,
+          "bidHigh": 21.078356
+        },
+        {
+          "keyword": "رقم خدمة عملاء lg",
+          "volume": 1300,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.448775,
+          "bidHigh": 187.289963
+        },
+        {
+          "keyword": "أسعار تكييفات فريش",
+          "volume": 1000,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.971694,
+          "bidHigh": 93.167324
+        },
+        {
+          "keyword": "رقم الصيانة lg",
+          "volume": 1000,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 16.760297,
+          "bidHigh": 104.026559
+        },
+        {
+          "keyword": "سعر التكييفات شارب",
+          "volume": 1000,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.717362,
+          "bidHigh": 16.098379
+        },
+        {
+          "keyword": "سعر تكييف صحراوي فريش",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": 0.541933,
+          "bidHigh": 1.618261
+        },
+        {
+          "keyword": "خدمة عملاء شارب تكييف",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "خدمة عملاء شارب للتكييفات",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "خدمه عملاء شارب للتكييف",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "خدمه عملاء شارب للتكييفات",
+          "volume": 880,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 0.480585,
+          "bidHigh": 1.35958
+        },
+        {
+          "keyword": "أسعار تكييفات كاريير",
+          "volume": 720,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 2.283596,
+          "bidHigh": 11.571976
+        },
+        {
+          "keyword": "ريموت تكييف يونيون",
+          "volume": 720,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 1.169407,
+          "bidHigh": 4.697591
+        },
+        {
+          "keyword": "صيانة تكييف ميديا",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.467027,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "صيانة تكييفات ميديا",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.467027,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "صيانة يونيون تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 18.945824,
+          "bidHigh": 82.950535
+        },
+        {
+          "keyword": "تكييفات سامسونج",
+          "volume": 590,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 3.770483,
+          "bidHigh": 52.388147
+        },
+        {
+          "keyword": "توكيل تكييف كاريير",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 4.492176,
+          "bidHigh": 60.065642
+        },
+        {
+          "keyword": "خدمة عملاء فريش تكييف",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 6.652588,
+          "bidHigh": 36.424071
+        },
+        {
+          "keyword": "خدمه عملاء فريش للتكييفات",
+          "volume": 590,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 6.652588,
+          "bidHigh": 36.424071
+        },
+        {
+          "keyword": "سعر تكييف شارب 3 حصان",
+          "volume": 590,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 2.234344,
+          "bidHigh": 17.325555
+        }
+      ]
+    },
+    {
+      "group": "صيانة وإصلاح التكييف العام",
+      "count": 477,
+      "totalVolume": 57510,
+      "topKeywords": [
+        {
+          "keyword": "التكييف الصحراوي",
+          "volume": 9900,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.540957,
+          "bidHigh": 4.240438
+        },
+        {
+          "keyword": "تكييف صحراوي",
+          "volume": 9900,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.540957,
+          "bidHigh": 4.240438
+        },
+        {
+          "keyword": "تكييفات شباك",
+          "volume": 3600,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 3.510772,
+          "bidHigh": 51.780255
+        },
+        {
+          "keyword": "صيانة التكييفات",
+          "volume": 3600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.401747,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "صيانة تكييف",
+          "volume": 3600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.401747,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "فني التكييف",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.325319,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "فنى تكييف",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.325319,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "انواع التكييفات",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.870424,
+          "bidHigh": 17.720167
+        },
+        {
+          "keyword": "تكييفات 3 حصان",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 1.075405,
+          "bidHigh": 9.760124
+        },
+        {
+          "keyword": "مكيف الشباك",
+          "volume": 1000,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 6.121178,
+          "bidHigh": 31.353022
+        },
+        {
+          "keyword": "تكييفات متحركة",
+          "volume": 880,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.569434,
+          "bidHigh": 2.085178
+        },
+        {
+          "keyword": "تكييف 5 حصان",
+          "volume": 720,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.676454,
+          "bidHigh": 9.288651
+        },
+        {
+          "keyword": "شركة تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.372202,
+          "bidHigh": 44.734898
+        },
+        {
+          "keyword": "شركه تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.372202,
+          "bidHigh": 44.734898
+        },
+        {
+          "keyword": "عروض التكييفات",
+          "volume": 720,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.99095,
+          "bidHigh": 10.713702
+        },
+        {
+          "keyword": "عروض تكييفات",
+          "volume": 720,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.99095,
+          "bidHigh": 10.713702
+        },
+        {
+          "keyword": "العربي تكييفات",
+          "volume": 480,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 3.176477,
+          "bidHigh": 21.831454
+        },
+        {
+          "keyword": "شركة صيانة تكييف",
+          "volume": 480,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.525681,
+          "bidHigh": 48.660786
+        },
+        {
+          "keyword": "كيفية توصيل كهرباء التكييف بالصور",
+          "volume": 480,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "التكييف مش بيسقع",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف ١ حصان",
+          "volume": 390,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.538896,
+          "bidHigh": 6.356914
+        },
+        {
+          "keyword": "تكييف ارضي",
+          "volume": 390,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 4.904362,
+          "bidHigh": 98.087526
+        },
+        {
+          "keyword": "صيانة مكيف",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.511741,
+          "bidHigh": 57.785897
+        },
+        {
+          "keyword": "انواع التكييف الصحراوي",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تصليح تكييف",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.528457,
+          "bidHigh": 53.272024
+        },
+        {
+          "keyword": "تكييفات باور",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييفات رنين",
+          "volume": 320,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.543018,
+          "bidHigh": 7.34282
+        },
+        {
+          "keyword": "المكيف الصحراوى",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف كارير",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 21.736693,
+          "bidHigh": 64.834508
+        },
+        {
+          "keyword": "تصليح مكيف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.445927,
+          "bidHigh": 44.784692
+        }
+      ]
+    },
+    {
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "count": 582,
+      "totalVolume": 17000,
+      "topKeywords": [
+        {
+          "keyword": "تكييف كونسيلد",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 6.29497,
+          "bidHigh": 115.616869
+        },
+        {
+          "keyword": "تكييفات كونسيلد",
+          "volume": 1300,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 6.29497,
+          "bidHigh": 115.616869
+        },
+        {
+          "keyword": "تكييف المركزي",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.256539,
+          "bidHigh": 57.050101
+        },
+        {
+          "keyword": "للتكييف المركزي",
+          "volume": 1000,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.256539,
+          "bidHigh": 57.050101
+        },
+        {
+          "keyword": "تكييف مركزي",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 12.498216,
+          "bidHigh": 56.332965
+        },
+        {
+          "keyword": "تكييفات مركزية",
+          "volume": 720,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 12.498216,
+          "bidHigh": 56.332965
+        },
+        {
+          "keyword": "تكييف فرى ستاند",
+          "volume": 390,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 3.56637,
+          "bidHigh": 15.299988
+        },
+        {
+          "keyword": "تكييف مركزي للمنزل",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 7.591955,
+          "bidHigh": 15.553245
+        },
+        {
+          "keyword": "تكييف مركزي منزلي",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 7.591955,
+          "bidHigh": 15.553245
+        },
+        {
+          "keyword": "سعر التكييف المركزي",
+          "volume": 320,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 8.522425,
+          "bidHigh": 98.080691
+        },
+        {
+          "keyword": "التكييف المركزى",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 10.978458,
+          "bidHigh": 59.806039
+        },
+        {
+          "keyword": "الكونسيلد",
+          "volume": 260,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 3.898495,
+          "bidHigh": 203.675826
+        },
+        {
+          "keyword": "تكييف كونسيلد ٥ حصان",
+          "volume": 210,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 4.187714,
+          "bidHigh": 197.006965
+        },
+        {
+          "keyword": "مفتاح التكييف المركزي",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مفتاح مكيف مركزي",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف vrf",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 7.340705,
+          "bidHigh": 35.630887
+        },
+        {
+          "keyword": "تكييف كونسيلد ٣ حصان",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 3.900231,
+          "bidHigh": 69.679041
+        },
+        {
+          "keyword": "دكتات تكييف",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شكل التكييف المركزي",
+          "volume": 140,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار التكييف المركزى",
+          "volume": 110,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 10.044841,
+          "bidHigh": 51.790615
+        },
+        {
+          "keyword": "الكونسيلد التكييف",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركة تكييف مركزي",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 15.401747,
+          "bidHigh": 64.683769
+        },
+        {
+          "keyword": "طريقة تشغيل المكيف المركزي",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مكيف كونسيلد",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر تكييف المركزي",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف مركزي",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 17.212406,
+          "bidHigh": 67.327751
+        },
+        {
+          "keyword": "مكيف مركزي كارير",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب التكييف الكونسيلد",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف كونسيلد",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف الدكت",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "count": 371,
+      "totalVolume": 14020,
+      "topKeywords": [
+        {
+          "keyword": "اعطال التكييف الشارب",
+          "volume": 1600,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 5.108421,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "اعطال تكييف ميديا",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 12.467027,
+          "bidHigh": 46.10587
+        },
+        {
+          "keyword": "اعطال يونيون تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 18.945824,
+          "bidHigh": 82.950535
+        },
+        {
+          "keyword": "اعطال تكييف يونيون f1",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال التكييف الكارير",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 21.736693,
+          "bidHigh": 64.834508
+        },
+        {
+          "keyword": "اعطال تكييف كارير",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 21.736693,
+          "bidHigh": 64.834508
+        },
+        {
+          "keyword": "عطل e5 تكييف يونيون",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال التكييف يونيون",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 37.951911,
+          "bidHigh": 77.983197
+        },
+        {
+          "keyword": "سعر كباس تكييف 3 حصان",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف ال جي",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 21.729805,
+          "bidHigh": 103.475349
+        },
+        {
+          "keyword": "اعطال تكييف باور",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف سامسونج",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "رموز اعطال التكييف",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر كباس تكييف 1.5 حصان",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عطل e3 تكييف يونيون",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عطل ec تكييف كارير",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف تورنيدو",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف يونيون e5",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر كباس تكييف 2.25 حصان شارب",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف كاريير القديم",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف lg",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 30.444194,
+          "bidHigh": 115.687926
+        },
+        {
+          "keyword": "اعطال شارب انفرتر",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر كباس تكييف 3 حصان شارب",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كتالوج اعطال تكييف كاريير كونسيلد",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار كباس تكييف 1.5 حصان",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار كباس تكييف 2.25 حصان",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اصلاح اعطال تكييف يونيون e3",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "أعطال التكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال التكييفات",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اعطال تكييف جرى",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "أسعار خدمات التكييف",
+      "count": 77,
+      "totalVolume": 11840,
+      "topKeywords": [
+        {
+          "keyword": "اسعار التكييفات في مصر",
+          "volume": 2900,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.681876,
+          "bidHigh": 6.646913
+        },
+        {
+          "keyword": "انواع واسعار التكييف الصحراوي",
+          "volume": 1900,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 0.537811,
+          "bidHigh": 2.169688
+        },
+        {
+          "keyword": "سعر التكييف في مصر",
+          "volume": 1000,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.637066,
+          "bidHigh": 7.968301
+        },
+        {
+          "keyword": "اسعار تكييفات",
+          "volume": 880,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.576431,
+          "bidHigh": 5.671347
+        },
+        {
+          "keyword": "اسعار التكييفات اليوم",
+          "volume": 480,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.805225,
+          "bidHigh": 9.369689
+        },
+        {
+          "keyword": "اسعار التكييفات 2.25 حصان",
+          "volume": 390,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.566352,
+          "bidHigh": 10.18777
+        },
+        {
+          "keyword": "أسعار المكيف الصحراوي",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر المكيف الصحراوي",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "أسعار المكيفات",
+          "volume": 260,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.922171,
+          "bidHigh": 9.875823
+        },
+        {
+          "keyword": "سعر تكييف انفرتر 1.5 حصان بارد فقط",
+          "volume": 260,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.537052,
+          "bidHigh": 4.415694
+        },
+        {
+          "keyword": "اسعار التكييف الصحراوي في مصر",
+          "volume": 210,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "أسعار التكييفات",
+          "volume": 210,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.59726,
+          "bidHigh": 18.678572
+        },
+        {
+          "keyword": "اسعار تكييفات 1.5 حصان",
+          "volume": 210,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.640003,
+          "bidHigh": 7.57514
+        },
+        {
+          "keyword": "سعر تكييف 5 حصان",
+          "volume": 210,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.563205,
+          "bidHigh": 33.203874
+        },
+        {
+          "keyword": "اسعار التكييفات 3 حصان",
+          "volume": 170,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.37965,
+          "bidHigh": 9.891878
+        },
+        {
+          "keyword": "اسعار التكييفات في بي تك",
+          "volume": 170,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.512317,
+          "bidHigh": 17.678834
+        },
+        {
+          "keyword": "اسعار تكييفات صحراوي",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "افضل انواع التكييفات واسعارها",
+          "volume": 170,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 2.85162,
+          "bidHigh": 51.790615
+        },
+        {
+          "keyword": "سعر مكيف سبليت في مصر",
+          "volume": 170,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.360719,
+          "bidHigh": 9.214447
+        },
+        {
+          "keyword": "اسعار تكييف ٣ حصان",
+          "volume": 110,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.201844,
+          "bidHigh": 16.123331
+        },
+        {
+          "keyword": "اسعار تكييفات ٣ حصان",
+          "volume": 110,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.201844,
+          "bidHigh": 16.123331
+        },
+        {
+          "keyword": "اسعار التكييفات الشباك",
+          "volume": 90,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار التكييفات الكارير",
+          "volume": 90,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 2.588546,
+          "bidHigh": 5.828107
+        },
+        {
+          "keyword": "اسعار المكيفات الصحراويه",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار تكييفات حصان ونص",
+          "volume": 70,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 0.753532,
+          "bidHigh": 42.739219
+        },
+        {
+          "keyword": "سعر مكيف صحراوي",
+          "volume": 70,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر مكيف كارير",
+          "volume": 70,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 2.029634,
+          "bidHigh": 9.521133
+        },
+        {
+          "keyword": "اسعار التكييفات واحد ونصف حصان",
+          "volume": 50,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار تكييفات ٥ حصان",
+          "volume": 50,
+          "competition": "HIGH",
+          "intent": "تجارية",
+          "bidLow": 1.718447,
+          "bidHigh": 7.640285
+        },
+        {
+          "keyword": "اسعار تكييفات كريازي",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "التركيب والتأسيس والفك والنقل",
+      "count": 233,
+      "totalVolume": 11270,
+      "topKeywords": [
+        {
+          "keyword": "تكييف متنقل",
+          "volume": 4400,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.564986,
+          "bidHigh": 5.075713
+        },
+        {
+          "keyword": "تركيب تكييف",
+          "volume": 720,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.456603,
+          "bidHigh": 36.253425
+        },
+        {
+          "keyword": "تأسيس تكييف",
+          "volume": 390,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 14.713142,
+          "bidHigh": 32.54532
+        },
+        {
+          "keyword": "تأسيس مواسير التكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 14.476592,
+          "bidHigh": 30.069597
+        },
+        {
+          "keyword": "تركيب تكييف كاريير",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 4.475306,
+          "bidHigh": 133.000518
+        },
+        {
+          "keyword": "تركيب مكيف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.270236,
+          "bidHigh": 77.25505
+        },
+        {
+          "keyword": "تركيب تكييف شارب",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عزل مواسير التكييف",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف فريش",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.972618,
+          "bidHigh": 101.393751
+        },
+        {
+          "keyword": "تركيب تكييف ميديا",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 5.93453,
+          "bidHigh": 56.182877
+        },
+        {
+          "keyword": "تكييف ستاند متنقل",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فك وتركيب مكيفات سبليت",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب مفتاح التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تغطية مواسير التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر تركيب التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": 6.464314,
+          "bidHigh": 27.132165
+        },
+        {
+          "keyword": "طريقة تركيب مكيف سبلت في 12 خطوة بالصور فقط",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تركيب تكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 11.647319,
+          "bidHigh": 33.895408
+        },
+        {
+          "keyword": "مقاسات مواسير التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب مكيف سبليت",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 29.52929,
+          "bidHigh": 98.912061
+        },
+        {
+          "keyword": "رقم تركيب تكييف شارب",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر عزل مواسير التكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "عزل مواسير النحاس للمكيفات السبلت",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تاسيس السبلت",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تاسيس مكيفات",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة تركيب التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر متر النحاس للتكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": 15.216727,
+          "bidHigh": 15.53719
+        },
+        {
+          "keyword": "عزل مواسير التكييف الاسبليت",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فك وتركيب التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 7.703314,
+          "bidHigh": 29.83321
+        },
+        {
+          "keyword": "فك وتركيب تكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 7.703314,
+          "bidHigh": 29.83321
+        },
+        {
+          "keyword": "تاسيس المكيف السبلت",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "تنظيف وغسيل التكييف",
+      "count": 223,
+      "totalVolume": 7060,
+      "topKeywords": [
+        {
+          "keyword": "تنظيف التكييف",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.97552,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "تنظيف التكييفات",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.97552,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "تنظيف المكيف",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف",
+          "volume": 320,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": 9.97552,
+          "bidHigh": 41.475267
+        },
+        {
+          "keyword": "تنظيف تكييف شارب 1.5 حصان",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كيس غسيل التكييف",
+          "volume": 260,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طرق تنظيف التكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقه تنظيف تكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فلتر مكيف شباك",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقة غسيل تكييف شارب الوحدة الخارجية",
+          "volume": 170,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "غسيل التكييف",
+          "volume": 170,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف شارب 2.25 حصان",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "غسيل التكييفات",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "غسيل تكييف",
+          "volume": 140,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شركات تنظيف مكيفات",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقة غسيل التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "طريقه غسيل التكييف",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف التكييف في المنزل",
+          "volume": 90,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كيفية تنظيف التكييف",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف التكييف الشارب",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف المكيف الشباك",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر غسيل التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "كيفية غسيل التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف التكييف بالبلاور",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف الوحدة الداخلية للتكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف شارب ٣ حصان",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف تكييف كاريير optimax",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف فلتر التكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف فلتر التكييف شارب",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تنظيف فلتر تكييف شارب",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "شحن الفريون وكشف التسريب",
+      "count": 65,
+      "totalVolume": 3790,
+      "topKeywords": [
+        {
+          "keyword": "تكييف صحراوي فريون",
+          "volume": 590,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مكيف فريون متنقل",
+          "volume": 480,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": 0.513836,
+          "bidHigh": 2.675171
+        },
+        {
+          "keyword": "اسعار تكييف فريون متنقل",
+          "volume": 390,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف متنقل بالفريون توشيبا",
+          "volume": 320,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شحن فريون التكييف",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 22.484639,
+          "bidHigh": 36.232162
+        },
+        {
+          "keyword": "شحن فريون تكييف",
+          "volume": 260,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": 22.484639,
+          "bidHigh": 36.232162
+        },
+        {
+          "keyword": "سعر شحن فريون التكييف",
+          "volume": 210,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": 5.179045,
+          "bidHigh": 34.596109
+        },
+        {
+          "keyword": "تكلفة شحن فريون التكييف",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف صحراوي فريون متنقل",
+          "volume": 110,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مكيف الفريون",
+          "volume": 110,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة شحن فريون تكييف 1.5 حصان",
+          "volume": 90,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحن الفريون للتكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "مدة شحن فريون التكييف",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار شحن فريون التكييف",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "انواع فريون التكييف",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شحن التكييف بالفريون",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسباب تسريب الفريون من التكييف",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تسريب فريون التكييف",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تسريب الفريون من التكييف",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر شحن التكييف بالفريون",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسباب تسريب فريون التكييف",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "معلوماتية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكلفة شحن التكييف بالفريون",
+          "volume": 20,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف متنقل بالفريون شارب",
+          "volume": 20,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "سعر التكييف المحمول بالفريون شارب",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "شحن فريون 410",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار تعبئة الفريون للمكيفات",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار شحن الفريون",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "اسعار فريون المكيفات",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "تجارية",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "التكييف بيسرب فريون",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب مكيف فريون",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    },
+    {
+      "group": "المناطق والمحافظات في مصر",
+      "count": 51,
+      "totalVolume": 1650,
+      "topKeywords": [
+        {
+          "keyword": "صيانة تكييف مدينة نصر",
+          "volume": 320,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 14.949204,
+          "bidHigh": 35.703843
+        },
+        {
+          "keyword": "صيانه تكييفات اكتوبر",
+          "volume": 140,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف كاريير الشيخ زايد",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف التجمع الخامس",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 20.73766,
+          "bidHigh": 35.419885
+        },
+        {
+          "keyword": "صيانة تكييف الشيخ زايد",
+          "volume": 110,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف كاريير بالاسكندريه carrier",
+          "volume": 90,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف شارب الساحل الشمالى",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف المعادي",
+          "volume": 70,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف 6 اكتوبر",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.442564,
+          "bidHigh": 30.623735
+        },
+        {
+          "keyword": "صيانة تكييف الاسكندرية",
+          "volume": 50,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف مدينة نصر",
+          "volume": 50,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": 13.411753,
+          "bidHigh": 41.565341
+        },
+        {
+          "keyword": "فنى تكييف الشيخ زايد",
+          "volume": 40,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 12.343851,
+          "bidHigh": 46.206
+        },
+        {
+          "keyword": "صيانة تكييف المهندسين",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف مصر الجديدة",
+          "volume": 30,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف الاسكندرية",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف الهرم",
+          "volume": 30,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييف زهراء مدينة نصر",
+          "volume": 20,
+          "competition": "MEDIUM",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "صيانة تكييفات في اكتوبر",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "فني تكييف التجمع الخامس",
+          "volume": 20,
+          "competition": "LOW",
+          "intent": "طلب خدمة",
+          "bidLow": 9.646616,
+          "bidHigh": 26.879063
+        },
+        {
+          "keyword": "موزع معتمد تكييف كاريير بالاسكندرية",
+          "volume": 20,
+          "competition": "HIGH",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "ارقام مهندسين تكييف",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تركيب تكييف اكتوبر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تصليح مكيفات 6 اكتوبر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تصليح مكيفات مدينة نصر",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "طلب خدمة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "تكييف كاريير التجمع الخامس",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف شارب اسكندرية",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف كاريير اسكندرية",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل تكييف كاريير الاسكندرية",
+          "volume": 10,
+          "competition": "LOW",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل lg التجمع الخامس",
+          "volume": 10,
+          "competition": "UNSPECIFIED",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        },
+        {
+          "keyword": "توكيل lg فيصل",
+          "volume": 10,
+          "competition": "MEDIUM",
+          "intent": "عامة",
+          "bidLow": null,
+          "bidHigh": null
+        }
+      ]
+    }
+  ],
+  "topServiceKeywords": [
+    {
+      "keyword": "صيانة التكييفات",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 3600,
+      "competition": "LOW",
+      "bidLow": 15.401747,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "صيانة تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 3600,
+      "competition": "LOW",
+      "bidLow": 15.401747,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "اعطال التكييف الشارب",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 5.108421,
+      "bidHigh": 41.475267
+    },
+    {
+      "keyword": "صيانة تكييف شارب",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 5.108421,
+      "bidHigh": 41.475267
+    },
+    {
+      "keyword": "صيانة تكييف كاريير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 21.725248,
+      "bidHigh": 72.417405
+    },
+    {
+      "keyword": "صيانة تكييفات شارب",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 5.108421,
+      "bidHigh": 41.475267
+    },
+    {
+      "keyword": "صيانه تكييف كاريير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 21.725248,
+      "bidHigh": 72.417405
+    },
+    {
+      "keyword": "فني التكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 15.325319,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "فنى تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 1600,
+      "competition": "LOW",
+      "bidLow": 15.325319,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "تكييف كونسيلد",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 1300,
+      "competition": "HIGH",
+      "bidLow": 6.29497,
+      "bidHigh": 115.616869
+    },
+    {
+      "keyword": "تكييفات كونسيلد",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 1300,
+      "competition": "HIGH",
+      "bidLow": 6.29497,
+      "bidHigh": 115.616869
+    },
+    {
+      "keyword": "رقم خدمة عملاء lg",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 1300,
+      "competition": "LOW",
+      "bidLow": 15.448775,
+      "bidHigh": 187.289963
+    },
+    {
+      "keyword": "تكييف المركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 1000,
+      "competition": "MEDIUM",
+      "bidLow": 9.256539,
+      "bidHigh": 57.050101
+    },
+    {
+      "keyword": "رقم الصيانة lg",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "عامة",
+      "volume": 1000,
+      "competition": "LOW",
+      "bidLow": 16.760297,
+      "bidHigh": 104.026559
+    },
+    {
+      "keyword": "للتكييف المركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 1000,
+      "competition": "MEDIUM",
+      "bidLow": 9.256539,
+      "bidHigh": 57.050101
+    },
+    {
+      "keyword": "خدمة عملاء شارب تكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 880,
+      "competition": "LOW",
+      "bidLow": 0.480585,
+      "bidHigh": 1.35958
+    },
+    {
+      "keyword": "خدمة عملاء شارب للتكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 880,
+      "competition": "LOW",
+      "bidLow": 0.480585,
+      "bidHigh": 1.35958
+    },
+    {
+      "keyword": "خدمه عملاء شارب للتكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 880,
+      "competition": "LOW",
+      "bidLow": 0.480585,
+      "bidHigh": 1.35958
+    },
+    {
+      "keyword": "خدمه عملاء شارب للتكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 880,
+      "competition": "LOW",
+      "bidLow": 0.480585,
+      "bidHigh": 1.35958
+    },
+    {
+      "keyword": "اعطال تكييف ميديا",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 12.467027,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "اعطال يونيون تكييف",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 18.945824,
+      "bidHigh": 82.950535
+    },
+    {
+      "keyword": "تركيب تكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 11.456603,
+      "bidHigh": 36.253425
+    },
+    {
+      "keyword": "تكييف مركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 720,
+      "competition": "MEDIUM",
+      "bidLow": 12.498216,
+      "bidHigh": 56.332965
+    },
+    {
+      "keyword": "تكييفات مركزية",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 720,
+      "competition": "MEDIUM",
+      "bidLow": 12.498216,
+      "bidHigh": 56.332965
+    },
+    {
+      "keyword": "شركة تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 11.372202,
+      "bidHigh": 44.734898
+    },
+    {
+      "keyword": "شركه تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 11.372202,
+      "bidHigh": 44.734898
+    },
+    {
+      "keyword": "صيانة تكييف ميديا",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 12.467027,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "صيانة تكييفات ميديا",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 12.467027,
+      "bidHigh": 46.10587
+    },
+    {
+      "keyword": "صيانة يونيون تكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 720,
+      "competition": "LOW",
+      "bidLow": 18.945824,
+      "bidHigh": 82.950535
+    },
+    {
+      "keyword": "توكيل تكييف كاريير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "عامة",
+      "volume": 590,
+      "competition": "LOW",
+      "bidLow": 4.492176,
+      "bidHigh": 60.065642
+    },
+    {
+      "keyword": "خدمة عملاء فريش تكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 590,
+      "competition": "LOW",
+      "bidLow": 6.652588,
+      "bidHigh": 36.424071
+    },
+    {
+      "keyword": "خدمه عملاء فريش للتكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 590,
+      "competition": "LOW",
+      "bidLow": 6.652588,
+      "bidHigh": 36.424071
+    },
+    {
+      "keyword": "صيانة شارب تكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 590,
+      "competition": "LOW",
+      "bidLow": 0.685241,
+      "bidHigh": 39.434459
+    },
+    {
+      "keyword": "صيانة شارب للتكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 590,
+      "competition": "LOW",
+      "bidLow": 0.685241,
+      "bidHigh": 39.434459
+    },
+    {
+      "keyword": "رقم خدمة عملاء شارب للتكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 480,
+      "competition": "LOW",
+      "bidLow": 0.886317,
+      "bidHigh": 158.833908
+    },
+    {
+      "keyword": "رقم خدمة عملاء شارب للتكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 480,
+      "competition": "LOW",
+      "bidLow": 0.886317,
+      "bidHigh": 158.833908
+    },
+    {
+      "keyword": "رقم خدمه عملاء شارب للتكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 480,
+      "competition": "LOW",
+      "bidLow": 0.886317,
+      "bidHigh": 158.833908
+    },
+    {
+      "keyword": "شركة صيانة تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 480,
+      "competition": "LOW",
+      "bidLow": 14.525681,
+      "bidHigh": 48.660786
+    },
+    {
+      "keyword": "اعطال تكييف يونيون f1",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 390,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تأسيس تكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "عامة",
+      "volume": 390,
+      "competition": "LOW",
+      "bidLow": 14.713142,
+      "bidHigh": 32.54532
+    },
+    {
+      "keyword": "خدمة عملاء تكييف كاريير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 390,
+      "competition": "LOW",
+      "bidLow": 3.989296,
+      "bidHigh": 20.73766
+    },
+    {
+      "keyword": "صيانة مكيف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 390,
+      "competition": "LOW",
+      "bidLow": 14.511741,
+      "bidHigh": 57.785897
+    },
+    {
+      "keyword": "تصليح تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 320,
+      "competition": "LOW",
+      "bidLow": 15.528457,
+      "bidHigh": 53.272024
+    },
+    {
+      "keyword": "تكييف مركزي للمنزل",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 320,
+      "competition": "MEDIUM",
+      "bidLow": 7.591955,
+      "bidHigh": 15.553245
+    },
+    {
+      "keyword": "تكييف مركزي منزلي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 320,
+      "competition": "MEDIUM",
+      "bidLow": 7.591955,
+      "bidHigh": 15.553245
+    },
+    {
+      "keyword": "تنظيف التكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 320,
+      "competition": "MEDIUM",
+      "bidLow": 9.97552,
+      "bidHigh": 41.475267
+    },
+    {
+      "keyword": "تنظيف التكييفات",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 320,
+      "competition": "MEDIUM",
+      "bidLow": 9.97552,
+      "bidHigh": 41.475267
+    },
+    {
+      "keyword": "تنظيف المكيف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 320,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تنظيف تكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 320,
+      "competition": "MEDIUM",
+      "bidLow": 9.97552,
+      "bidHigh": 41.475267
+    },
+    {
+      "keyword": "سعر التكييف المركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "تجارية",
+      "volume": 320,
+      "competition": "HIGH",
+      "bidLow": 8.522425,
+      "bidHigh": 98.080691
+    },
+    {
+      "keyword": "صيانة تكييف مدينة نصر",
+      "group": "المناطق والمحافظات في مصر",
+      "intent": "طلب خدمة",
+      "volume": 320,
+      "competition": "LOW",
+      "bidLow": 14.949204,
+      "bidHigh": 35.703843
+    },
+    {
+      "keyword": "صيانة تكييف يونيون اير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 320,
+      "competition": "LOW",
+      "bidLow": 20.32862,
+      "bidHigh": 64.16619
+    },
+    {
+      "keyword": "اعطال التكييف الكارير",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 21.736693,
+      "bidHigh": 64.834508
+    },
+    {
+      "keyword": "اعطال تكييف كارير",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 21.736693,
+      "bidHigh": 64.834508
+    },
+    {
+      "keyword": "التكييف المركزى",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 10.978458,
+      "bidHigh": 59.806039
+    },
+    {
+      "keyword": "الكونسيلد",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "MEDIUM",
+      "bidLow": 3.898495,
+      "bidHigh": 203.675826
+    },
+    {
+      "keyword": "تنظيف تكييف شارب 1.5 حصان",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "رقم صيانة تكييف ال جي",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "رقم صيانة تكييف شارب",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 19.020407,
+      "bidHigh": 82.950535
+    },
+    {
+      "keyword": "رقم صيانة تكييف كاريير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 260,
+      "competition": "MEDIUM",
+      "bidLow": 16.62122,
+      "bidHigh": 43.39376
+    },
+    {
+      "keyword": "رقم صيانه تكييفات شارب",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 19.020407,
+      "bidHigh": 82.950535
+    },
+    {
+      "keyword": "شحن فريون التكييف",
+      "group": "شحن الفريون وكشف التسريب",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 22.484639,
+      "bidHigh": 36.232162
+    },
+    {
+      "keyword": "شحن فريون تكييف",
+      "group": "شحن الفريون وكشف التسريب",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 22.484639,
+      "bidHigh": 36.232162
+    },
+    {
+      "keyword": "صيانة تكييف كارير",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": 21.736693,
+      "bidHigh": 64.834508
+    },
+    {
+      "keyword": "عطل e5 تكييف يونيون",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "كيس غسيل التكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 260,
+      "competition": "HIGH",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اعطال التكييف يونيون",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 37.951911,
+      "bidHigh": 77.983197
+    },
+    {
+      "keyword": "تأسيس مواسير التكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 14.476592,
+      "bidHigh": 30.069597
+    },
+    {
+      "keyword": "تركيب تكييف كاريير",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 4.475306,
+      "bidHigh": 133.000518
+    },
+    {
+      "keyword": "تركيب مكيف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 12.270236,
+      "bidHigh": 77.25505
+    },
+    {
+      "keyword": "تصليح مكيف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 12.445927,
+      "bidHigh": 44.784692
+    },
+    {
+      "keyword": "تكييف كونسيلد ٥ حصان",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "HIGH",
+      "bidLow": 4.187714,
+      "bidHigh": 197.006965
+    },
+    {
+      "keyword": "توكيل تكييفات شارب",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 0.516494,
+      "bidHigh": 15.503397
+    },
+    {
+      "keyword": "توكيل شارب تكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "MEDIUM",
+      "bidLow": 0.963992,
+      "bidHigh": 20.272317
+    },
+    {
+      "keyword": "سعر شحن فريون التكييف",
+      "group": "شحن الفريون وكشف التسريب",
+      "intent": "تجارية",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 5.179045,
+      "bidHigh": 34.596109
+    },
+    {
+      "keyword": "سعر كباس تكييف 3 حصان",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "تجارية",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة تكييف فريش",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 15.070001,
+      "bidHigh": 65.09064
+    },
+    {
+      "keyword": "صيانة تكييفات فريش",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 15.070001,
+      "bidHigh": 65.09064
+    },
+    {
+      "keyword": "صيانة تكييفات يونيون",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 37.951911,
+      "bidHigh": 77.983197
+    },
+    {
+      "keyword": "صيانة كاريير تكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 21.748735,
+      "bidHigh": 59.66642
+    },
+    {
+      "keyword": "طرق تنظيف التكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "طريقه تنظيف تكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "معلوماتية",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "فلتر مكيف شباك",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "فنى تكييف وتبريد",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": 14.471981,
+      "bidHigh": 44.064519
+    },
+    {
+      "keyword": "مفتاح التكييف المركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "مفتاح مكيف مركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 210,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اعطال تكييف ال جي",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": 21.729805,
+      "bidHigh": 103.475349
+    },
+    {
+      "keyword": "اعطال تكييف باور",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اعطال تكييف سامسونج",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تركيب تكييف شارب",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تكييف vrf",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "MEDIUM",
+      "bidLow": 7.340705,
+      "bidHigh": 35.630887
+    },
+    {
+      "keyword": "خط ساخن lg",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "MEDIUM",
+      "bidLow": 24.951412,
+      "bidHigh": 84.825416
+    },
+    {
+      "keyword": "رقم شركة شارب للتكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "رقم شركه شارب للتكييف",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "رقم صيانة شارب تكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "رموز اعطال التكييف",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "سعر كباس تكييف 1.5 حصان",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "تجارية",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "شحن تكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة التكييف",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": 20.73766,
+      "bidHigh": 48.323074
+    },
+    {
+      "keyword": "صيانة تكييف ال جي",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": 21.729805,
+      "bidHigh": 103.475349
+    },
+    {
+      "keyword": "صيانة تكييف باور",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة تكييف سامسونج",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة تكييف شارب 1.5 حصان",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانه التكييفات",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": 20.73766,
+      "bidHigh": 48.323074
+    },
+    {
+      "keyword": "صيانه تكييف ال جي",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": 21.729805,
+      "bidHigh": 103.475349
+    },
+    {
+      "keyword": "صيانه تكييف باور",
+      "group": "صيانة وإصلاح التكييف العام",
+      "intent": "طلب خدمة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "طريقة غسيل تكييف شارب الوحدة الخارجية",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "معلوماتية",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "عزل مواسير التكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "MEDIUM",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "عطل e3 تكييف يونيون",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "عطل ec تكييف كارير",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "غسيل التكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 170,
+      "competition": "MEDIUM",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اعطال تكييف تورنيدو",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اعطال تكييف يونيون e5",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تركيب تكييف فريش",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": 12.972618,
+      "bidHigh": 101.393751
+    },
+    {
+      "keyword": "تركيب تكييف ميديا",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": 5.93453,
+      "bidHigh": 56.182877
+    },
+    {
+      "keyword": "تكلفة شحن فريون التكييف",
+      "group": "شحن الفريون وكشف التسريب",
+      "intent": "تجارية",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تكييف كونسيلد ٣ حصان",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "HIGH",
+      "bidLow": 3.900231,
+      "bidHigh": 69.679041
+    },
+    {
+      "keyword": "تنظيف تكييف شارب 2.25 حصان",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "خدمة عملاء lg تكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "دكتات تكييف",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "سعر كباس تكييف 2.25 حصان شارب",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "تجارية",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "شكل التكييف المركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "MEDIUM",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة تكييف تورنيدو",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانه تكييفات اكتوبر",
+      "group": "المناطق والمحافظات في مصر",
+      "intent": "طلب خدمة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "غسيل التكييفات",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "HIGH",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "غسيل تكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "HIGH",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "فك وتركيب مكيفات سبليت",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "عامة",
+      "volume": 140,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اسعار التكييف المركزى",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "تجارية",
+      "volume": 110,
+      "competition": "HIGH",
+      "bidLow": 10.044841,
+      "bidHigh": 51.790615
+    },
+    {
+      "keyword": "اعطال تكييف كاريير القديم",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "اعطال تكييف lg",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 30.444194,
+      "bidHigh": 115.687926
+    },
+    {
+      "keyword": "اعطال شارب انفرتر",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "عامة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "الكونسيلد التكييف",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "عامة",
+      "volume": 110,
+      "competition": "MEDIUM",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تركيب مفتاح التكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "تغطية مواسير التكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "عامة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "خدمة عملاء تكييف فريش",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 13.438016,
+      "bidHigh": 93.997284
+    },
+    {
+      "keyword": "رقم خدمة عملاء تكييف ميديا",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 10.554881,
+      "bidHigh": 38.777911
+    },
+    {
+      "keyword": "سعر تركيب التكييف",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "تجارية",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 6.464314,
+      "bidHigh": 27.132165
+    },
+    {
+      "keyword": "سعر كباس تكييف 3 حصان شارب",
+      "group": "أعطال التكييف والأكواد وقطع الغيار",
+      "intent": "تجارية",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "شركات تنظيف مكيفات",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "عامة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "شركة تكييف مركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 15.401747,
+      "bidHigh": 64.683769
+    },
+    {
+      "keyword": "صيانة تكييف التجمع الخامس",
+      "group": "المناطق والمحافظات في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 20.73766,
+      "bidHigh": 35.419885
+    },
+    {
+      "keyword": "صيانة تكييف الشيخ زايد",
+      "group": "المناطق والمحافظات في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة تكييف شارب العربى الخط الساخن",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "صيانة تكييف lg",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 30.444194,
+      "bidHigh": 115.687926
+    },
+    {
+      "keyword": "صيانة تكييفات يونيون اير",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 16.429311,
+      "bidHigh": 77.983197
+    },
+    {
+      "keyword": "صيانة تكييفات lg",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": 30.444194,
+      "bidHigh": 115.687926
+    },
+    {
+      "keyword": "صيانه كاريير تكييفات",
+      "group": "صيانة ماركات التكييف في مصر",
+      "intent": "طلب خدمة",
+      "volume": 110,
+      "competition": "MEDIUM",
+      "bidLow": 24.154431,
+      "bidHigh": 72.583386
+    },
+    {
+      "keyword": "طريقة تركيب مكيف سبلت في 12 خطوة بالصور فقط",
+      "group": "التركيب والتأسيس والفك والنقل",
+      "intent": "معلوماتية",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "طريقة تشغيل المكيف المركزي",
+      "group": "التكييف المركزي والكونسيلد وVRF",
+      "intent": "معلوماتية",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    },
+    {
+      "keyword": "طريقة غسيل التكييف",
+      "group": "تنظيف وغسيل التكييف",
+      "intent": "معلوماتية",
+      "volume": 110,
+      "competition": "LOW",
+      "bidLow": null,
+      "bidHigh": null
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import AcBtuCalculator from '../../components/AcBtuCalculator.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { keywordClusters, siteSeoConfig } from '../../data/seo-keywords';
+import { deepServicesBySlug } from '../../data/services-deep-content';
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'خدمات التكييف في مصر', url: '/services' },
+];
+
+const hubFaqs = [
+  {
+    question: 'ما الفرق بين الصيانة الوقائية السنوية وصيانة الأعطال الطارئة؟',
+    answer:
+      'الصيانة الوقائية تشمل الغسيل الكيميائي للوحدتين وفحص الفريون والأمبير والكباستور قبل بداية الصيف لتوفير 35% من الكهرباء ومنع الأعطال، بينما صيانة الطوارئ متاحة على مدار 24 ساعة لإصلاح توقف التبريد أو أكواد الخطأ أو تسريب المياه خلال ساعتين.',
+  },
+  {
+    question: 'هل تقدم شركة أركان عقود صيانة سنوية للشركات والمصانع والعيادات؟',
+    answer:
+      'نعم، نوفر عقود صيانة سنوية ونصف سنوية وربع سنوية معتمدة بفواتير ضريبية تشمل الزيارات الوقائية المجدولة وأولوية الاستجابة الفورية للأعطال وخصومات خاصة على قطع الغيار الأصلية.',
+  },
+  {
+    question: 'هل تشمل خدماتكم التكييف الكونسيلد والمركزي VRF إلى جانب السبليت؟',
+    answer:
+      'بالتأكيد؛ يضم فريق أركان قسماً هندسياً متخصصاً لحساب الأحمال الحرارية وتصميم وتنفيذ وصيانة أنظمة التكييف الكونسيلد المخفي والمركزي VRF والتشيلر للفلل والمقرات الإدارية.',
+  },
+];
+---
+
+<BaseLayout
+  title={`خدمات صيانة وتركيب وتأسيس التكييف في مصر | ${siteSeoConfig.brandFullName}`}
+  description="الدليل الكامل لخدمات شركة أركان في مصر: صيانة تكييف فورية 24/7، تركيب وتأسيس مواسير النحاس، شحن فريون R410a أصلي، غسيل كيميائي، وتكييف كونسيلد ومركزي بضمان 12 شهراً."
+  canonicalPath="/services"
+  breadcrumbs={breadcrumbs}
+  pageFaqs={hubFaqs}
+>
+  <Navbar activePath="/services" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container hub-hero">
+        <span class="section-eyebrow">منظومة خدمات متكاملة</span>
+        <h1 class="heading-1">جميع خدمات صيانة وتركيب وتأسيس التكييف في مصر</h1>
+        <p class="text-lead hub-hero__desc">
+          حلول هندسية شاملة تغطي دورة حياة جهاز التكييف بالكامل: من حساب الأحمال وتأسيس المواسير قبل المحارة، إلى التركيب القياسي بالفاكيوم، والغسيل الموسمي، وإصلاح الأعطال الفوري بضمان رسمي مكتوب.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="hub-grid">
+          {
+            keywordClusters.map((cluster) => {
+              const deep = deepServicesBySlug[cluster.slug];
+              return (
+                <a href={`/services/${cluster.slug}`} class="hub-card">
+                  <div class="hub-card__top">
+                    <span class="hub-badge">{deep?.badge || 'خدمة متخصصة'}</span>
+                  </div>
+                  <h2 class="heading-3">{cluster.category}</h2>
+                  <p class="text-body">{cluster.description}</p>
+                  {deep?.pricingRows[0] && (
+                    <div class="hub-card__meta">
+                      <span>التكلفة الاسترشادية: <strong>{deep.pricingRows[0].range}</strong></span>
+                    </div>
+                  )}
+                  <span class="hub-card__cta">تصفح الدليل الكامل والأسعار ←</span>
+                </a>
+              );
+            })
+          }
+        </div>
+
+        <!-- Rich Category Editorial Prose -->
+        <div class="hub-editorial">
+          <h2 class="heading-2">لماذا تختار منظومة خدمات أركان الهندسية لصيانة وتركيب تكييفك؟</h2>
+          <p class="text-body">
+            في سوق خدمات التبريد والتكييف بمصر، يصنع الفارق الحقيقي الالتزام بالأصول الهندسية الدقيقة بدلاً من الحلول المؤقتة. سواء كنت تبحث عن <a href="/services/ac-maintenance-egypt">فني تكييف معتمد للصيانة الفورية</a> في منزلك، أو تخطط لتنفيذ <a href="/services/ac-installation-piping">تأسيس مواسير التكييف النحاس</a> في شقتك الجديدة قبل التشطيب، أو تحتاج إلى شركة متمرسة في <a href="/services/central-concealed-ac">أنظمة التكييف الكونسيلد والمركزي VRF</a>، فإن كل خدمة في أركان تخضع لقائمة فحص معيارية موثقة.
+          </p>
+          <p class="text-body">
+            نستخدم في جميع عمليات <a href="/services/ac-freon-charging">شحن فريون التكييف</a> أسطوانات فريون أصلية (Honeywell / Refrigerant R410a & R22) بميزان رقمي بعد اختبار التسريب بالنيتروجين وسحب الفاكيوم الكامل، كما ننفذ <a href="/services/ac-cleaning-washing">غسيل وتنظيف التكييف بالمنزل</a> بأكياس حماية محكمة ومواد تعقيم متعادلة تحافظ على زعانف الألومنيوم وتقضي على البكتيريا والفطريات المسببة للروائح والحساسية.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <AcBtuCalculator />
+
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">استفسارات العملاء</span>
+          <h2 class="heading-2">أسئلة شائعة حول خدمات التكييف في أركان</h2>
+        </div>
+        <div class="faq-list">
+          {
+            hubFaqs.map((faq, idx) => (
+              <details class="faq-item" open={idx === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .hub-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .hub-hero__desc { max-width: 760px; }
+  .hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .hub-card { background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 32px; display: flex; flex-direction: column; gap: 14px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .hub-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
+  .hub-badge { display: inline-block; background-color: var(--sun-60); color: var(--ebony-130); font-family: var(--font-heading); font-weight: 700; font-size: 12px; padding: 5px 14px; border-radius: 9999px; }
+  .hub-card__meta { padding-top: 10px; border-top: 1px solid rgba(55, 93, 108, 0.1); font-size: 14px; color: var(--ebony-130); }
+  .hub-card__cta { margin-top: auto; font-family: var(--font-heading); font-weight: 700; font-size: 15px; color: var(--bayou-110); }
+  .hub-editorial { margin-top: 56px; background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 36px; display: flex; flex-direction: column; gap: 16px; }
+  .hub-editorial .text-body { color: var(--ebony-130); line-height: 1.9; }
+  .hub-editorial a { color: var(--bayou-110); font-weight: 700; text-decoration: underline; }
+  @media (max-width: 860px) { .hub-grid { grid-template-columns: 1fr; } }
+</style>

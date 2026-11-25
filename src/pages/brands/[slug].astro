@@ -1,0 +1,225 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import EditorialArticle from '../../components/EditorialArticle.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { brandsData } from '../../data/brands-data';
+import { brandsLongformBySlug } from '../../data/seo-silos/brands-longform';
+import { areasData } from '../../data/areas-data';
+import { siteSeoConfig } from '../../data/seo-keywords';
+
+export function getStaticPaths() {
+  return brandsData.map((brand) => ({
+    params: { slug: brand.slug },
+    props: { brand },
+  }));
+}
+
+const { brand } = Astro.props;
+const longform = brandsLongformBySlug[brand.slug];
+const otherBrands = brandsData.filter((b) => b.slug !== brand.slug);
+
+const combinedFaqs = [
+  ...brand.faqs,
+  ...(longform?.extraFaqs || []),
+];
+
+const combinedKeywords = [
+  ...(longform ? [longform.primaryKeyword, ...longform.secondaryKeywords, ...longform.semanticEntities] : []),
+  ...brand.keywords,
+];
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'صيانة الماركات', url: '/brands' },
+  { name: `تكييف ${brand.nameAr}`, url: `/brands/${brand.slug}` },
+];
+const pageTitle = longform?.seoTitle || `${brand.heroTitle} | ${siteSeoConfig.brandFullName}`;
+const pageDesc = longform?.metaDescription || brand.heroSubtitle;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDesc}
+  extraKeywords={combinedKeywords}
+  canonicalPath={`/brands/${brand.slug}`}
+  breadcrumbs={breadcrumbs}
+  pageFaqs={combinedFaqs}
+  howTo={{
+    name: `خطوات فحص وصيانة تكييف ${brand.nameAr} في شركة أركان`,
+    steps: brand.maintenanceChecklist.map((text, idx) => ({
+      name: `المرحلة ${idx + 1} لصيانة تكييف ${brand.nameAr}`,
+      text,
+    })),
+  }}
+>
+  <Navbar activePath="/brands" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container detail-hero">
+        <span class="section-eyebrow">مركز صيانة هندسي متخصص • {brand.nameAr} ({brand.nameEn})</span>
+        <h1 class="heading-1 detail-hero__title">{brand.heroTitle}</h1>
+        <p class="text-lead detail-hero__desc">{brand.heroSubtitle}</p>
+
+        <div class="geo-quick-answer">
+          <strong class="geo-quick-answer__label">إجابة سريعة عن صيانة تكييف {brand.nameAr} في مصر:</strong>
+          <p>{brand.quickAnswer}</p>
+        </div>
+
+        <div class="detail-hero__actions">
+          <button type="button" class="btn-gold btn-gold--lg" data-open-booking>
+            احجز فني صيانة {brand.nameAr} الآن
+          </button>
+          <a href="/guides/ac-error-codes-egypt" class="btn-outline btn-outline--light">
+            دليل أكواد الأعطال الشامل
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview & Series -->
+    <section class="section section--pearl20">
+      <div class="container">
+        <div class="brand-layout">
+          <div class="brand-overview">
+            <h2 class="heading-2">خبرة أركان في صيانة تكييف {brand.nameAr}</h2>
+            {brand.overview.map((p) => <p class="text-body">{p}</p>)}
+            <div class="eeat-banner">
+              <strong>تنويه شفافية:</strong> شركة أركان مركز هندسي مستقل متخصص في صيانة وتركيب جميع ماركات التكييف في مصر بقطع غيار أصلية وضمان رسمي خاص بالشركة، وليست الوكيل الحصري للمصنع.
+            </div>
+          </div>
+
+          <div class="brand-sidebar">
+            <div class="sidebar-card">
+              <h3 class="heading-3">موديلات {brand.nameAr} المدعومة</h3>
+              <ul class="clean-list">
+                {brand.supportedSeries.map((s) => <li>✓ {s}</li>)}
+              </ul>
+            </div>
+
+            <div class="sidebar-card">
+              <h3 class="heading-3">معايير الفحص والضمان</h3>
+              <ul class="clean-list">
+                {brand.maintenanceChecklist.map((c) => <li>• {c}</li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep Brand Engineering Reference + Sticky TOC -->
+    {
+      longform && (
+        <EditorialArticle
+          tocTitle={`الدليل الهندسي لتكييف ${brand.nameAr}`}
+          readTime={longform.readTime}
+          primaryKeyword={longform.primaryKeyword}
+          sections={longform.sections}
+        />
+      )
+    }
+
+    <!-- Error Codes Table -->
+    <section class="section section--pearl20">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">مرجع الأعطال الهندسي</span>
+          <h2 class="heading-2">جدول أكواد وأعطال تكييف {brand.nameAr} وطريقة حلها</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">رمز العطل / العرض</th>
+                <th scope="col">التشخيص الفني</th>
+                <th scope="col">الحل الهندسي في أركان</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                brand.commonFaults.map((f) => (
+                  <tr>
+                    <td><span class="code-pill">{f.code}</span></td>
+                    <td>{f.meaning}</td>
+                    <td>{f.solution}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs & Cross Navigation -->
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">أسئلة شائعة</span>
+          <h2 class="heading-2">كل ما يهمك عن صيانة تكييف {brand.nameAr}</h2>
+        </div>
+
+        <div class="faq-list" style="margin-bottom: 56px;">
+          {
+            combinedFaqs.map((faq, idx) => (
+              <details class="faq-item" open={idx === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+
+        <div class="related-grid">
+          <div class="related-card">
+            <h3 class="heading-3">ماركات تكييف أخرى نخدمها</h3>
+            <div class="related-chips">
+              {otherBrands.map((b) => <a href={`/brands/${b.slug}`} class="related-chip">صيانة {b.nameAr}</a>)}
+            </div>
+          </div>
+          <div class="related-card">
+            <h3 class="heading-3">مناطق تغطية صيانة {brand.nameAr}</h3>
+            <div class="related-chips">
+              {areasData.map((a) => <a href={`/areas/${a.slug}`} class="related-chip">{a.nameAr}</a>)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .detail-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .detail-hero__title { max-width: 880px; }
+  .detail-hero__desc { max-width: 740px; }
+  .detail-hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 6px; }
+
+  .brand-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: start; }
+  .brand-overview { display: flex; flex-direction: column; gap: 16px; }
+  .eeat-banner { margin-top: 8px; background-color: var(--pearl-10); border-right: 4px solid var(--bayou-110); padding: 16px 20px; border-radius: 14px; font-size: 14px; color: var(--ebony-130); line-height: 1.75; }
+  .brand-sidebar { display: flex; flex-direction: column; gap: 20px; }
+  .sidebar-card { background-color: var(--pearl-10); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 14px; box-shadow: var(--card-shadow); }
+  .clean-list { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: var(--ebony-130); }
+  .code-pill { display: inline-block; background-color: var(--sun-60); color: var(--ebony-130); font-family: var(--font-heading); font-weight: 700; padding: 4px 12px; border-radius: 10px; white-space: nowrap; }
+
+  .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .related-card { background-color: var(--pearl-20); border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-chip { background-color: var(--pearl-10); color: var(--bayou-110); font-family: var(--font-heading); font-weight: 600; font-size: 13px; padding: 6px 12px; border-radius: 12px; }
+  .related-chip:hover { background-color: var(--sun-60); color: var(--ebony-130); }
+
+  @media (max-width: 900px) {
+    .brand-layout, .related-grid { grid-template-columns: 1fr; }
+  }
+</style>

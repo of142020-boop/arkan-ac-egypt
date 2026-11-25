@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import SmartAcDiagnosticTool from '../../components/SmartAcDiagnosticTool.astro';
+import AcBtuCalculator from '../../components/AcBtuCalculator.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { siteSeoConfig } from '../../data/seo-keywords';
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'أدوات وحاسبات التكييف الذكية', url: '/tools' },
+];
+---
+
+<BaseLayout
+  title={`أدوات وحاسبات التكييف الذكية: تشخيص الأعطال، تكلفة الصيانة، وحاسبة الحصان | ${siteSeoConfig.brandFullName}`}
+  description="استخدم أدوات شركة أركان الهندسية المجانية: مشخّص أكواد وأعطال التكييف الفوري، حاسبة تكلفة الصيانة والتركيب وشحن الفريون 2026، وحاسبة قدرة التكييف بالحصان والـ BTU."
+  canonicalPath="/tools"
+  breadcrumbs={breadcrumbs}
+>
+  <Navbar activePath="/tools" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container hub-hero">
+        <span class="section-eyebrow">حصرياً لعملاء أركان في مصر</span>
+        <h1 class="heading-1">أدوات وحاسبات التكييف الهندسية الذكية (مجاناً)</h1>
+        <p class="text-lead hub-hero__desc">
+          شخّص كود عطل جهازك، واحسب التكلفة العادلة للصيانة أو التركيب، وحدد القدرة التبريدية الدقيقة لغرفتك بالحصان والـ BTU في ثوانٍ قبل طلب الفني.
+        </p>
+      </div>
+    </section>
+
+    <SmartAcDiagnosticTool />
+    <AcBtuCalculator />
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .hub-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .hub-hero__desc { max-width: 760px; }
+</style>

@@ -1,0 +1,407 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Navbar from "../../components/Navbar.astro";
+import EditorialArticle from "../../components/EditorialArticle.astro";
+import AcBtuCalculator from "../../components/AcBtuCalculator.astro";
+import SectionContact from "../../components/SectionContact.astro";
+import Footer from "../../components/Footer.astro";
+import BookingModal from "../../components/BookingModal.astro";
+import { keywordClusters, siteSeoConfig } from "../../data/seo-keywords";
+import { deepServicesBySlug } from "../../data/services-deep-content";
+import { servicesLongformBySlug } from "../../data/seo-silos/services-longform";
+import { brandsData } from "../../data/brands-data";
+import { areasData } from "../../data/areas-data";
+
+export function getStaticPaths() {
+  return keywordClusters.map((cluster) => ({
+    params: { slug: cluster.slug },
+    props: { cluster },
+  }));
+}
+
+const { cluster } = Astro.props;
+const deep = deepServicesBySlug[cluster.slug];
+const longform = servicesLongformBySlug[cluster.slug];
+const otherClusters = keywordClusters
+  .filter((c) => c.slug !== cluster.slug)
+  .slice(0, 6);
+
+const combinedFaqs = [...(deep?.faqs || []), ...(longform?.extraFaqs || [])];
+
+const combinedKeywords = [
+  ...(longform
+    ? [
+        longform.primaryKeyword,
+        ...longform.secondaryKeywords,
+        ...longform.semanticEntities,
+      ]
+    : []),
+  ...cluster.topKeywords.map((k) => k.keyword),
+];
+
+const showCalculator = [
+  "ac-installation-piping",
+  "central-concealed-ac",
+].includes(cluster.slug);
+
+const breadcrumbs = [
+  { name: "الرئيسية", url: "/" },
+  { name: "خدمات التكييف", url: "/services" },
+  { name: cluster.category, url: `/services/${cluster.slug}` },
+];
+const pageTitle =
+  longform?.seoTitle || `${cluster.title} | ${siteSeoConfig.brandFullName}`;
+const pageDesc = longform?.metaDescription || cluster.description;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDesc}
+  extraKeywords={combinedKeywords}
+  canonicalPath={`/services/${cluster.slug}`}
+  breadcrumbs={breadcrumbs}
+  pageFaqs={combinedFaqs}
+  howTo={deep ? { name: deep.stepsTitle, steps: deep.steps } : undefined}
+>
+  <Navbar activePath="/services" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="section section--bayou">
+      <div class="container detail-hero">
+        <span class="section-eyebrow">{deep?.badge || cluster.category}</span>
+        <h1 class="heading-1 detail-hero__title">{cluster.title}</h1>
+        <p class="text-lead detail-hero__desc">{cluster.description}</p>
+
+        {deep && (
+          <div class="geo-quick-answer">
+            <strong class="geo-quick-answer__label">
+              ملخص الخدمة المباشر:
+            </strong>
+            <p>{deep.quickAnswer}</p>
+          </div>
+        )}
+
+        <div class="detail-hero__actions">
+          <button type="button" class="btn-gold btn-gold--lg" data-open-booking>
+            احجز فني متخصص الآن
+          </button>
+          <a
+            href="/guides/ac-maintenance-prices-egypt"
+            class="btn-outline btn-outline--light"
+          >
+            دليل الأسعار 2026
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Sub-Services -->
+    {deep && (
+      <section class="section section--pearl20">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">نطاق العمل التفصيلي</span>
+            <h2 class="heading-2">
+              ماذا تشمل خدمة «{cluster.category}» في أركان؟
+            </h2>
+          </div>
+
+          <div class="subservices-grid">
+            {deep.subServices.map((item) => (
+              <article class="subservice-card">
+                <div class="subservice-card__head">
+                  <h3 class="heading-3">{item.title}</h3>
+                  <span class="tag-pill">{item.tag}</span>
+                </div>
+                <p class="text-body">{item.description}</p>
+                <button
+                  type="button"
+                  class="subservice-card__btn"
+                  data-open-booking
+                >
+                  طلب هذه الخدمة ←
+                </button>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Deep Encyclopedia-Grade Engineering Article + Sticky TOC -->
+    {longform && (
+      <EditorialArticle
+        tocTitle={`الدليل الهندسي لـ ${cluster.category}`}
+        readTime={longform.readTime}
+        primaryKeyword={longform.primaryKeyword}
+        sections={longform.sections}
+      />
+    )}
+
+    {showCalculator && <AcBtuCalculator />}
+
+    <!-- Engineering Steps + 2026 Pricing Table -->
+    {deep && (
+      <section class="section section--pearl20">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">منهجية التنفيذ والشفافية</span>
+            <h2 class="heading-2">{deep.stepsTitle}</h2>
+          </div>
+
+          <div class="steps-grid">
+            {deep.steps.map((step, i) => (
+              <article class="step-card">
+                <span class="step-num" dir="ltr">
+                  0{i + 1}
+                </span>
+                <h3 class="heading-3">{step.name}</h3>
+                <p class="text-sm">{step.text}</p>
+              </article>
+            ))}
+          </div>
+
+          <div class="pricing-block">
+            <h3 class="heading-2 pricing-block__title">
+              الأسعار الاسترشادية والضمان في مصر (2026)
+            </h3>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th scope="col">الخدمة</th>
+                    <th scope="col">متوسط السعر الإرشادي</th>
+                    <th scope="col">الضمان المعتمد</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {deep.pricingRows.map((row) => (
+                    <tr>
+                      <td>
+                        <strong>{row.service}</strong>
+                      </td>
+                      <td>{row.range}</td>
+                      <td>
+                        <span class="warranty-pill">{row.warranty}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- Comprehensive FAQs + Related Silos -->
+    <section class="section section--pearl10">
+      <div class="container">
+        {combinedFaqs.length > 0 && (
+          <div style="margin-bottom: 56px;">
+            <div class="section-header">
+              <span class="section-eyebrow">إجابات هندسية موثقة</span>
+              <h2 class="heading-2">الأسئلة الشائعة حول {cluster.category}</h2>
+            </div>
+            <div class="faq-list">
+              {combinedFaqs.map((faq, idx) => (
+                <details class="faq-item" open={idx === 0}>
+                  <summary>{faq.question}</summary>
+                  <p>{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div class="related-grid">
+          <div class="related-card">
+            <h3 class="heading-3">خدمات أخرى من أركان</h3>
+            <div class="related-chips">
+              {otherClusters.map((o) => (
+                <a href={`/services/${o.slug}`} class="related-chip">
+                  {o.category}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div class="related-card">
+            <h3 class="heading-3">صيانة أشهر الماركات</h3>
+            <div class="related-chips">
+              {brandsData.slice(0, 6).map((b) => (
+                <a href={`/brands/${b.slug}`} class="related-chip">
+                  تكييف {b.nameAr}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div class="related-card">
+            <h3 class="heading-3">أهم مناطق التغطية</h3>
+            <div class="related-chips">
+              {areasData.slice(0, 6).map((a) => (
+                <a href={`/areas/${a.slug}`} class="related-chip">
+                  {a.nameAr}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .detail-hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .detail-hero__title {
+    max-width: 880px;
+  }
+  .detail-hero__desc {
+    max-width: 740px;
+  }
+  .detail-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 6px;
+  }
+
+  .subservices-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .subservice-card {
+    background-color: var(--pearl-10);
+    border-radius: var(--radius-card);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: var(--card-shadow);
+  }
+  .subservice-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .tag-pill {
+    background-color: var(--bayou-20);
+    color: var(--bayou-110);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+  .subservice-card__btn {
+    margin-top: auto;
+    align-self: flex-start;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--bayou-110);
+  }
+  .subservice-card__btn:hover {
+    color: var(--bayou-120);
+    text-decoration: underline;
+  }
+
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .step-card {
+    background-color: var(--pearl-10);
+    border-radius: 24px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: var(--card-shadow);
+  }
+  .step-num {
+    font-family: var(--font-num);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--sun-80);
+    line-height: 1;
+  }
+
+  .pricing-block {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pricing-block__title {
+    text-align: center;
+  }
+  .warranty-pill {
+    display: inline-block;
+    background-color: var(--mint-tag);
+    color: var(--bayou-120);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .related-card {
+    background-color: var(--pearl-20);
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .related-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .related-chip {
+    background-color: var(--pearl-10);
+    color: var(--bayou-110);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease;
+  }
+  .related-chip:hover {
+    background-color: var(--sun-60);
+    color: var(--ebony-130);
+  }
+
+  @media (max-width: 900px) {
+    .subservices-grid,
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

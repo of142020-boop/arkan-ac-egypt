@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import EditorialArticle from '../../components/EditorialArticle.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { areasData } from '../../data/areas-data';
+import { areasLongformBySlug } from '../../data/seo-silos/areas-longform';
+import { brandsData } from '../../data/brands-data';
+import { keywordClusters, siteSeoConfig } from '../../data/seo-keywords';
+
+export function getStaticPaths() {
+  return areasData.map((area) => ({
+    params: { slug: area.slug },
+    props: { area },
+  }));
+}
+
+const { area } = Astro.props;
+const longform = areasLongformBySlug[area.slug];
+const otherAreas = areasData.filter((a) => a.slug !== area.slug);
+
+const combinedFaqs = [
+  ...area.faqs,
+  ...(longform?.extraFaqs || []),
+];
+
+const combinedKeywords = [
+  ...(longform ? [longform.primaryKeyword, ...longform.secondaryKeywords, ...longform.semanticEntities] : []),
+  ...area.keywords,
+];
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'مناطق التغطية', url: '/areas' },
+  { name: area.nameAr, url: `/areas/${area.slug}` },
+];
+const pageTitle = longform?.seoTitle || `${area.heroTitle} | ${siteSeoConfig.brandFullName}`;
+const pageDesc = longform?.metaDescription || area.heroSubtitle;
+---
+
+<BaseLayout
+  title={pageTitle}
+  description={pageDesc}
+  extraKeywords={combinedKeywords}
+  canonicalPath={`/areas/${area.slug}`}
+  breadcrumbs={breadcrumbs}
+  pageFaqs={combinedFaqs}
+  geo={{ placename: `${area.nameAr}, ${area.governorate}, Egypt`, lat: area.lat, lng: area.lng }}
+>
+  <Navbar activePath="/areas" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container detail-hero">
+        <div class="area-meta-pills">
+          <span class="section-eyebrow">محافظة {area.governorate} • {area.nameAr}</span>
+          <span class="time-pill">⏱ متوسط الوصول: {area.arrivalTime}</span>
+        </div>
+        <h1 class="heading-1 detail-hero__title">{area.heroTitle}</h1>
+        <p class="text-lead detail-hero__desc">{area.heroSubtitle}</p>
+
+        <div class="geo-quick-answer">
+          <strong class="geo-quick-answer__label">ملخص تغطية شركة أركان في {area.nameAr}:</strong>
+          <p>{area.quickAnswer}</p>
+        </div>
+
+        <div class="detail-hero__actions">
+          <button type="button" class="btn-gold btn-gold--lg" data-open-booking>
+            اطلب فني تكييف في {area.nameAr} الآن
+          </button>
+          <a href={`tel:${siteSeoConfig.phone}`} class="btn-outline btn-outline--light">
+            اتصال مباشر: {siteSeoConfig.hotline}
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pearl20">
+      <div class="container">
+        <div class="area-grid">
+          <div class="area-box">
+            <h2 class="heading-3">الأحياء والشوارع والكمبوندات المغطاة في {area.nameAr}</h2>
+            <ul class="clean-list">
+              {area.localCoverage.map((loc) => <li>📍 {loc}</li>)}
+            </ul>
+            <div class="local-note">
+              <strong>توصية مهندسي أركان لسكان {area.nameAr}:</strong> {area.localNote}
+            </div>
+          </div>
+
+          <div class="area-box">
+            <h2 class="heading-3">أكثر الخدمات طلباً في {area.nameAr}</h2>
+            <ul class="clean-list">
+              {area.popularServices.map((srv) => <li>✓ {srv}</li>)}
+            </ul>
+            <button type="button" class="btn-gold btn-gold--md" data-open-booking style="align-self: flex-start; margin-top: auto;">
+              احجز موعدك في {area.nameAr}
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep Hyper-Local Engineering Guide + Sticky TOC -->
+    {
+      longform && (
+        <EditorialArticle
+          tocTitle={`دليل التكييف الشامل في ${area.nameAr}`}
+          readTime={longform.readTime}
+          primaryKeyword={longform.primaryKeyword}
+          sections={longform.sections}
+        />
+      )
+    }
+
+    <section class="section section--pearl20">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">استفسارات سكان {area.nameAr}</span>
+          <h2 class="heading-2">الأسئلة الشائعة حول صيانة وتركيب التكييف في {area.nameAr}</h2>
+        </div>
+
+        <div class="faq-list" style="margin-bottom: 56px;">
+          {
+            combinedFaqs.map((faq, idx) => (
+              <details class="faq-item" open={idx === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+
+        <div class="related-grid">
+          <div class="related-card">
+            <h3 class="heading-3">مناطق أخرى نغطيها في مصر</h3>
+            <div class="related-chips">
+              {otherAreas.map((a) => <a href={`/areas/${a.slug}`} class="related-chip">تكييف {a.nameAr}</a>)}
+            </div>
+          </div>
+          <div class="related-card">
+            <h3 class="heading-3">خدمات وماركات متوفرة في {area.nameAr}</h3>
+            <div class="related-chips">
+              {keywordClusters.slice(0, 4).map((c) => <a href={`/services/${c.slug}`} class="related-chip">{c.category}</a>)}
+              {brandsData.slice(0, 4).map((b) => <a href={`/brands/${b.slug}`} class="related-chip">صيانة {b.nameAr}</a>)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .detail-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .area-meta-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .time-pill { background-color: rgba(250, 250, 249, 0.14); color: var(--pearl-10); font-family: var(--font-heading); font-weight: 700; font-size: 13px; padding: 6px 16px; border-radius: 9999px; }
+  .detail-hero__title { max-width: 880px; }
+  .detail-hero__desc { max-width: 740px; }
+  .detail-hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 6px; }
+
+  .area-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .area-box { background-color: var(--pearl-10); border-radius: var(--radius-card); padding: 32px; display: flex; flex-direction: column; gap: 18px; box-shadow: var(--card-shadow); }
+  .clean-list { list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: var(--ebony-130); }
+  .local-note { background-color: var(--pearl-20); border-right: 4px solid var(--sun-80); padding: 14px 18px; border-radius: 14px; font-size: 14px; line-height: 1.75; }
+
+  .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .related-card { background-color: var(--pearl-10); border-radius: 24px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-chip { background-color: var(--pearl-20); color: var(--bayou-110); font-family: var(--font-heading); font-weight: 600; font-size: 13px; padding: 6px 12px; border-radius: 12px; }
+  .related-chip:hover { background-color: var(--sun-60); color: var(--ebony-130); }
+
+  @media (max-width: 900px) {
+    .area-grid, .related-grid { grid-template-columns: 1fr; }
+  }
+</style>

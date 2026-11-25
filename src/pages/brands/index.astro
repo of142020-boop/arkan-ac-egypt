@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import SectionContact from '../../components/SectionContact.astro';
+import Footer from '../../components/Footer.astro';
+import BookingModal from '../../components/BookingModal.astro';
+import { brandsData } from '../../data/brands-data';
+import { siteSeoConfig } from '../../data/seo-keywords';
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'صيانة ماركات التكييف', url: '/brands' },
+];
+
+const brandHubFaqs = [
+  {
+    question: 'هل شركة أركان مركز مستقل أم توكيل مصنع؟',
+    answer:
+      'شركة أركان مركز هندسي مصري مستقل متخصص في صيانة وتركيب جميع ماركات التكييف خارج الضمان أو للصيانة الفورية والوقائية، ونلتزم بتوفير قطع غيار أصلية مطابقة لمواصفات المصنع مع فاتورة وشهادة ضمان رسمية معتمدة من شركتنا لمدة تصل إلى 12 شهراً.',
+  },
+  {
+    question: 'هل تختلف طريقة فحص التكييف الإنفرتر عن التكييف العادي بين الماركات؟',
+    answer:
+      'نعم؛ أجهزة الإنفرتر في شارب وكاريير وإل جي وميديا وجري تعتمد على كروت تحكم إلكترونية متغيرة التردد (IPM) وغاز فريون R410a أو R32، وتتطلب قياس الفولت والتردد وشحن الفريون السائل بالميزان الإلكتروني بدقة.',
+  },
+];
+---
+
+<BaseLayout
+  title={`صيانة جميع ماركات التكييف في مصر وأكواد الأعطال | ${siteSeoConfig.brandFullName}`}
+  description="المرجع الهندسي لصيانة جميع ماركات التكييف في مصر (شارب، كاريير، إل جي، ميديا، يونيون إير، فريش، تورنيدو، جري) مع جداول أكواد الأعطال وقطع غيار أصلية وضمان 12 شهراً."
+  canonicalPath="/brands"
+  breadcrumbs={breadcrumbs}
+  pageFaqs={brandHubFaqs}
+>
+  <Navbar activePath="/brands" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container hub-hero">
+        <span class="section-eyebrow">خبرة هندسية متعددة الماركات</span>
+        <h1 class="heading-1">صيانة جميع ماركات التكييف في مصر بقطع غيار أصلية</h1>
+        <p class="text-lead hub-hero__desc">
+          اختر ماركة تكييفك للاطلاع على الموديلات المدعومة، جدول تشخيص أكواد الأعطال الإلكترونية، الأسعار الاسترشادية، وحجز مهندس متخصص يصلك خلال ساعتين.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="brands-grid">
+          {
+            brandsData.map((brand) => (
+              <a href={`/brands/${brand.slug}`} class="brand-card">
+                <div class="brand-card__head">
+                  <h2 class="heading-3">صيانة تكييف {brand.nameAr}</h2>
+                  <span class="brand-en" dir="ltr">{brand.nameEn}</span>
+                </div>
+                <p class="text-sm">{brand.quickAnswer}</p>
+                <div class="brand-codes">
+                  {brand.commonFaults.slice(0, 3).map((f) => (
+                    <span class="mini-code">{f.code}</span>
+                  ))}
+                </div>
+                <span class="brand-cta">دليل صيانة وأكواد أعطال {brand.nameAr} ←</span>
+              </a>
+            ))
+          }
+        </div>
+
+        <div class="hub-editorial">
+          <h2 class="heading-2">مقارنة تقنية بين أشهر ماركات التكييف في السوق المصري</h2>
+          <p class="text-body">
+            تتنوع تقنيات التبريد في السوق المصري بين الضواغط الاستوائية (Tropical Compressors) القادرة على العمل بكفاءة حتى 52 درجة مئوية كما في <a href="/brands/sharp">تكييف شارب</a> و<a href="/brands/carrier">تكييف كاريير</a>، وبين تقنيات الضاغط المزدوج الموفر للكهرباء في <a href="/brands/lg">تكييف إل جي Dual Inverter</a>، وأنظمة التوزيع الذكي للهواء في <a href="/brands/midea">تكييف ميديا بريزليس</a>، بالإضافة إلى الانتشار الواسع وسهولة توافر قطع الغيار في <a href="/brands/unionaire">تكييف يونيون إير</a> و<a href="/brands/fresh">تكييف فريش</a> و<a href="/brands/tornado">تورنيدو</a> و<a href="/brands/gree">جري</a>.
+          </p>
+          <p class="text-body">
+            يحتفظ أسطول سيارات أركان بمخزون متكامل من الحساسات الأصلية (Room & Pipe Sensors)، وكباستورات التشغيل الكورية والإيطالية، ومواتير المراوح، وبوردات التحكم، مما يضمن إصلاح 92% من الأعطال في نفس الزيارة مع تسليم شهادة ضمان معتمدة. كما يمكنك مراجعة <a href="/guides/ac-error-codes-egypt">دليل أكواد أعطال التكييف الشامل</a> لمعرفة دلالة أي رمز يظهر على شاشة جهازك فوراً.
+          </p>
+        </div>
+
+        <div class="faq-list" style="margin-top: 48px;">
+          {
+            brandHubFaqs.map((faq, idx) => (
+              <details class="faq-item" open={idx === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .hub-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .hub-hero__desc { max-width: 760px; }
+  .brands-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .brand-card { background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 28px; display: flex; flex-direction: column; gap: 14px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .brand-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow-hover); }
+  .brand-card__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .brand-en { font-family: var(--font-num); font-weight: 700; font-size: 14px; background-color: var(--bayou-20); color: var(--bayou-110); padding: 4px 12px; border-radius: 10px; }
+  .brand-codes { display: flex; flex-wrap: wrap; gap: 8px; }
+  .mini-code { background-color: var(--pearl-10); color: var(--ebony-130); font-family: var(--font-heading); font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 10px; }
+  .brand-cta { margin-top: auto; font-family: var(--font-heading); font-weight: 700; font-size: 14px; color: var(--bayou-110); }
+  .hub-editorial { margin-top: 56px; background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 36px; display: flex; flex-direction: column; gap: 16px; }
+  .hub-editorial .text-body { color: var(--ebony-130); line-height: 1.9; }
+  .hub-editorial a { color: var(--bayou-110); font-weight: 700; text-decoration: underline; }
+  @media (max-width: 860px) { .brands-grid { grid-template-columns: 1fr; } }
+</style>

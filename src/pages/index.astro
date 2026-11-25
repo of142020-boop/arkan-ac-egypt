@@ -1,0 +1,36 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import SectionHero from "../components/SectionHero.astro";
+import SectionServices from "../components/SectionServices.astro";
+import SectionProjects from "../components/SectionProjects.astro";
+import SectionReasons from "../components/SectionReasons.astro";
+import SmartAcDiagnosticTool from "../components/SmartAcDiagnosticTool.astro";
+import AcBtuCalculator from "../components/AcBtuCalculator.astro";
+import SectionTestimonials from "../components/SectionTestimonials.astro";
+import SectionTeam from "../components/SectionTeam.astro";
+import SectionHomeSeoGuide from "../components/SectionHomeSeoGuide.astro";
+import SectionQuickDirectory from "../components/SectionQuickDirectory.astro";
+import SectionContact from "../components/SectionContact.astro";
+import Footer from "../components/Footer.astro";
+import BookingModal from "../components/BookingModal.astro";
+---
+
+<BaseLayout>
+  <Navbar activePath="/" />
+  <main>
+    <SectionHero />
+    <SectionServices />
+    <SectionProjects />
+    <SectionReasons />
+    <SmartAcDiagnosticTool />
+    <AcBtuCalculator />
+    <SectionTestimonials />
+    <SectionTeam />
+    <SectionHomeSeoGuide />
+    <SectionQuickDirectory />
+    <SectionContact />
+  </main>
+  <Footer />
+  <BookingModal />
+</BaseLayout>

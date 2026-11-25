@@ -1,0 +1,238 @@
+---
+import { projectsContent } from '../data/site-content';
+
+const areaLinkMap: Record<string, string> = {
+  'luxury-apartments': '/areas/fifth-settlement',
+  'family-villa': '/areas/sheikh-zayed',
+  'commercial-office': '/areas/maadi',
+};
+---
+
+<section id="projects" class="section section--pearl10">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">نماذج من أعمالنا ومشاريعنا</span>
+      <h2 class="heading-2">{projectsContent.title}</h2>
+      <p class="text-body">{projectsContent.subtitle}</p>
+    </div>
+
+    <div class="projects-grid">
+      {
+        projectsContent.items.map((item) => (
+          <article class="project-card">
+            <div class="project-card__media">
+              <img
+                src={item.image}
+                alt={item.priceTitle}
+                class={`project-card__img project-card__img--${item.imagePosition}`}
+                loading="lazy"
+              />
+              <span class="project-card__tag" style={`background-color: ${item.tagBg};`}>
+                {item.tag}
+              </span>
+              <button
+                type="button"
+                class="project-card__fav"
+                aria-label="حفظ المشروع في المفضلة"
+                data-favorite-btn
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="project-card__body">
+              <div>
+                <h3 class="heading-3">{item.priceTitle}</h3>
+                <p class="text-sm project-card__sub">{item.subtitle}</p>
+              </div>
+
+              <div class="project-card__specs">
+                {item.details.map((detail, idx) => (
+                  <span class="spec-pill">
+                    {idx === 0 && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="5" width="20" height="8" rx="2" />
+                        <path d="M7 17h10" />
+                      </svg>
+                    )}
+                    {idx === 1 && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      </svg>
+                    )}
+                    {idx === 2 && (
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                      </svg>
+                    )}
+                    <span>{detail.text}</span>
+                  </span>
+                ))}
+              </div>
+
+              <a href={areaLinkMap[item.id] || '/areas'} class="project-card__loc">
+                <span class="icon-circle-sm" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span>{item.location}</span>
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="projects-footer">
+      <button type="button" class="btn-gold btn-gold--md" data-open-booking>
+        اطلب معاينة هندسية لمشروعك أو وحدتك
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .project-card {
+    background-color: var(--pearl-20);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .project-card__media {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+  }
+
+  .project-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-card__img--bottom {
+    object-position: bottom;
+  }
+
+  .project-card__tag {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--bayou-120);
+  }
+
+  .project-card__fav {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 42px;
+    height: 42px;
+    border-radius: 9999px;
+    background-color: var(--pearl-10);
+    color: var(--bayou-110);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .project-card__fav:hover,
+  .project-card__fav.is-active {
+    background-color: var(--sun-60);
+    color: var(--ebony-130);
+    transform: scale(1.06);
+  }
+
+  .project-card__body {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .project-card__sub {
+    margin-top: 4px;
+  }
+
+  .project-card__specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .spec-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--pearl-10);
+    color: var(--ebony-130);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 12px;
+  }
+
+  .spec-pill svg {
+    color: var(--bayou-110);
+    flex-shrink: 0;
+  }
+
+  .project-card__loc {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--bayou-110);
+    padding-top: 10px;
+    border-top: 1px solid rgba(55, 93, 108, 0.1);
+  }
+
+  .project-card__loc:hover {
+    color: var(--bayou-120);
+  }
+
+  .projects-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll('[data-favorite-btn]').forEach((btn) => {
+    btn.addEventListener('click', () => btn.classList.toggle('is-active'));
+  });
+</script>

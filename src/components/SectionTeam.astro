@@ -1,0 +1,89 @@
+---
+import { teamContent } from '../data/site-content';
+---
+
+<section id="team" class="section section--pearl20">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">قيادة وخبرة هندسية</span>
+      <h2 class="heading-2">{teamContent.title}</h2>
+      <p class="text-body">{teamContent.subtitle}</p>
+    </div>
+
+    <div class="team-grid">
+      {
+        teamContent.members.map((member) => (
+          <article class="team-card">
+            <div class="team-card__head">
+              <div class="team-card__photo">
+                <img src={member.photo} alt={member.name} loading="lazy" />
+              </div>
+              <div class="team-card__meta">
+                <h3 class="heading-3">{member.name}</h3>
+                <span class="team-card__role">{member.role}</span>
+              </div>
+            </div>
+            <p class="text-body">{member.bio}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .team-card {
+    background-color: var(--pearl-10);
+    border-radius: var(--radius-card);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: var(--card-shadow);
+  }
+
+  .team-card__head {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .team-card__photo {
+    width: 88px;
+    height: 88px;
+    border-radius: 9999px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .team-card__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-card__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .team-card__role {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ebony-100);
+  }
+
+  @media (max-width: 960px) {
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,198 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import SectionContact from '../components/SectionContact.astro';
+import Footer from '../components/Footer.astro';
+import BookingModal from '../components/BookingModal.astro';
+import { siteSeoConfig } from '../data/seo-keywords';
+
+const breadcrumbs = [
+  { name: 'الرئيسية', url: '/' },
+  { name: 'عقود صيانة الشركات والمؤسسات (B2B)', url: '/corporate-contracts' },
+];
+
+const b2bFaqs = [
+  {
+    question: 'هل تصدر شركة أركان فاتورة ضريبية إلكترونية معتمدة للشركات والمصانع؟',
+    answer:
+      'نعم، شركة أركان مسجلة بمنظومة الفاتورة الإلكترونية المصرية وتصدر فواتير ضريبية رسمية وكشوف صيانة دورية معتمدة لجميع عقود الشركات والبنوك والمستشفيات والمصانع.',
+  },
+  {
+    question: 'ما الفرق بين عقد الصيانة الوقائية وعقد الصيانة الشامل لقطع الغيار؟',
+    answer:
+      'عقد الصيانة الوقائية يشمل الزيارات الدورية المجدولة للغسيل والفحص الكامل وأولوية الطوارئ مع تسعير منفصل مخفض لقطع الغيار، بينما العقد الشامل يغطي الزيارات الدورية وجميع الأعطال وقطع الغيار الاستهلاكية طوال العام بميزانية سنوية ثابتة.',
+  },
+  {
+    question: 'ما هو زمن الاستجابة لأعطال تكييف غرف السيرفرات والداتا سنتر؟',
+    answer:
+      'نخصص لغرف السيرفرات والمراكز الطبية الحساسة اتفاقية مستوى خدمة (SLA) حرجة باستجابة طوارئ خلال 60 إلى 120 دقيقة على مدار 24 ساعة طوال أيام الأسبوع.',
+  },
+  {
+    question: 'هل تقدمون معاينة وحصر مجاني لأجهزة مقر الشركة قبل تقديم عرض السعر؟',
+    answer:
+      'بالتأكيد؛ يقوم مهندس مشروعات أركان بزيارة مقر شركتك مجاناً لحصر أعداد وقدرات وحالة جميع الوحدات (سبليت، كونسيلد، كاسيت، VRF، أو تشيلر) وتقديم عرض فني ومالي مفصل خلال 24 ساعة.',
+  },
+];
+---
+
+<BaseLayout
+  title={`عقود صيانة تكييفات للشركات والمباني الإدارية والمصانع في مصر | ${siteSeoConfig.brandFullName}`}
+  description="عقود صيانة تكييف سنوية للشركات، العيادات، البنوك، المصانع، وغرف السيرفرات في مصر بفاتورة ضريبية إلكترونية، استجابة SLA خلال ساعتين، وتقارير هندسية موثقة."
+  extraKeywords={[
+    'عقود صيانة تكييفات للشركات في مصر',
+    'عقد صيانة تكييف سنوي',
+    'صيانة تكييف المباني الإدارية',
+    'صيانة تكييف غرف السيرفرات',
+    'شركة صيانة تكييف مركزي للشركات',
+  ]}
+  canonicalPath="/corporate-contracts"
+  breadcrumbs={breadcrumbs}
+  pageFaqs={b2bFaqs}
+>
+  <Navbar activePath="/corporate-contracts" breadcrumbs={breadcrumbs} />
+
+  <main>
+    <section class="section section--bayou">
+      <div class="container detail-hero">
+        <span class="section-eyebrow">قطاع الأعمال والمؤسسات B2B • فواتير ضريبية إلكترونية</span>
+        <h1 class="heading-1 detail-hero__title">
+          عقود صيانة التكييفات السنوية للشركات والمباني الإدارية والمصانع في مصر
+        </h1>
+        <p class="text-lead detail-hero__desc">
+          احمِ استمرارية أعمالك واخفض استهلاك الكهرباء بنسبة تصل إلى 35% مع عقود صيانة وقائية وشاملة مصممة للشركات والعيادات والمولات وغرف السيرفرات وفق اتفاقية مستوى خدمة (SLA) ملزمة.
+        </p>
+
+        <div class="geo-quick-answer">
+          <strong class="geo-quick-answer__label">ملخص عقود الشركات في أركان:</strong>
+          <p>
+            توفر شركة أركان 3 باقات تعاقد سنوية مرنة (نصف سنوية، ربع سنوية، وشهرية حرجة لغرف السيرفرات والمصانع) تغطي أنظمة السبليت والكونسيلد والكاسيت والـ VRF والتشيلر، مع معاينة مجانية، تقارير حالة لكل جهاز (Asset Tagging)، وفاتورة ضريبية إلكترونية رسمية.
+          </p>
+        </div>
+
+        <div class="detail-hero__actions">
+          <button type="button" class="btn-gold btn-gold--lg" data-open-booking>
+            اطلب معاينة مجانية وعرض سعر لشركتك
+          </button>
+          <a href={`tel:${siteSeoConfig.phone}`} class="btn-outline btn-outline--light">
+            مبيعات التعاقدات: {siteSeoConfig.hotline}
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 B2B Contract Packages -->
+    <section class="section section--pearl10">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">خطط تعاقد مرنة</span>
+          <h2 class="heading-2">باقات عقود الصيانة السنوية للشركات والمؤسسات (2026)</h2>
+          <p class="text-body">
+            تُفصّل كل باقة وفق عدد الأجهزة ونوع الأنظمة وساعات التشغيل الفعلية في منشأتك مع خصومات تدريجية للمقرات المتعددة.
+          </p>
+        </div>
+
+        <div class="tiers-grid">
+          <article class="tier-card">
+            <span class="tier-tag">للمكاتب والعيادات</span>
+            <h3 class="heading-3">العقد الوقائي النصف سنوي</h3>
+            <p class="tier-freq">زيارتان مجدولتان سنوياً + طوارئ</p>
+            <ul class="clean-list">
+              <li>✓ غسيل كيميائي شامل قبل الصيف وبعده</li>
+              <li>✓ فحص الأمبير والكباستورات وضغوط الفريون</li>
+              <li>✓ تسليك شبكات الصرف وتعقيم الفلاتر</li>
+              <li>✓ خصم 20% على قطع الغيار الأصلية</li>
+              <li>✓ استجابة للبلاغات الطارئة خلال 6 ساعات</li>
+            </ul>
+            <button type="button" class="btn-outline" data-open-booking style="margin-top: auto;">
+              اطلب عرض سعر للباقة
+            </button>
+          </article>
+
+          <article class="tier-card tier-card--featured">
+            <span class="tier-tag tier-tag--gold">الأكثر طلباً للشركات</span>
+            <h3 class="heading-3">العقد الربع سنوي المتكامل</h3>
+            <p class="tier-freq">4 زيارات دورية (كل 3 أشهر) + أولوية SLA</p>
+            <ul class="clean-list">
+              <li>✓ ترقيم وتكويد كل جهاز بملف فني مستقل (Asset Log)</li>
+              <li>✓ 4 زيارات غسيل وفحص وقائي خارج أوقات الذروة</li>
+              <li>✓ استجابة طوارئ سريعة خلال 2 – 4 ساعات</li>
+              <li>✓ زيارات بلاغات أعطال غير محدودة بدون رسوم كشف</li>
+              <li>✓ فواتير ضريبية إلكترونية وتقارير استهلاك طاقة</li>
+            </ul>
+            <button type="button" class="btn-gold btn-gold--md" data-open-booking style="margin-top: auto;">
+              احجز معاينة مجانية للمقر
+            </button>
+          </article>
+
+          <article class="tier-card">
+            <span class="tier-tag">للمصانع والمولات والسيرفرات</span>
+            <h3 class="heading-3">العقد الشهري الحرج الشامل</h3>
+            <p class="tier-freq">12 زيارة شهرية + تغطية 24/7</p>
+            <ul class="clean-list">
+              <li>✓ مخصص لأنظمة VRF والكونسيلد والتشيلر وغرف السيرفرات</li>
+              <li>✓ استجابة حرجة خلال 60 – 120 دقيقة طوال 24/7</li>
+              <li>✓ خيار التعاقد الشامل لقطع الغيار والفريون</li>
+              <li>✓ مهندس حساب مخصص (Dedicated Account Engineer)</li>
+              <li>✓ مراجعة موازنة الهواء والأحمال الكهربائية شهرياً</li>
+            </ul>
+            <button type="button" class="btn-outline" data-open-booking style="margin-top: auto;">
+              تواصل مع إدارة المشروعات
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep B2B Technical Prose & SLA Table -->
+    <section class="section section--pearl20">
+      <div class="container">
+        <div class="b2b-prose-card">
+          <h2 class="heading-2">كيف يخفض عقد الصيانة السنوي مع أركان تكاليف التشغيل في شركتك بنسبة 40%؟</h2>
+          <p class="text-body">
+            تمثل أنظمة التكييف ما بين 50% إلى 65% من إجمالي فاتورة الكهرباء الصيفية في المباني الإدارية والعيادات والمراكز التجارية في مصر. الإهمال في تنظيف زعانف المكثفات وفلاتر الهواء يؤدي إلى ارتفاع ضغط الطرد الحراري بمتوسط 35 PSI، مما يرفع استهلاك التيار الكهربائي بنسبة 30% ويعرض ضواغط الـ VRF والسبليت للتوقف المفاجئ أثناء ساعات العمل الرسمية.
+          </p>
+          <p class="text-body">
+            من خلال <strong>نظام الإدارة الوقائية للأصول (Preventive HVAC Asset Management)</strong> في شركة أركان، نقوم بترقيم كل وحدة تكييف في منشأتك برمز تعريفي (QR / Asset ID)، وتسجيل قراءات الأمبير، ضغط السحب والطرد، سعة الكباستورات بالميكروفاراد، وفرق درجات الحرارة (Delta-T) في تقرير هندسي يُسلّم لإدارة التشغيل أو الشؤون الإدارية عقب كل زيارة، مع جدولة أعمال الغسيل في العطلات الأسبوعية أو بعد مواعيد انصراف الموظفين لضمان عدم تعطيل العمل نهائياً.
+          </p>
+        </div>
+
+        <div class="faq-list" style="margin-top: 48px;">
+          {
+            b2bFaqs.map((faq, idx) => (
+              <details class="faq-item" open={idx === 0}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <SectionContact />
+  </main>
+
+  <Footer />
+  <BookingModal />
+</BaseLayout>
+
+<style>
+  .detail-hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+  .detail-hero__title { max-width: 900px; }
+  .detail-hero__desc { max-width: 780px; }
+  .detail-hero__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 6px; }
+
+  .tiers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  .tier-card { background-color: var(--pearl-20); border-radius: var(--radius-card); padding: 32px; display: flex; flex-direction: column; gap: 14px; }
+  .tier-card--featured { background-color: var(--pearl-10); border: 2.5px solid var(--sun-80); box-shadow: var(--card-shadow-hover); }
+  .tier-tag { align-self: flex-start; background-color: var(--bayou-20); color: var(--bayou-110); font-family: var(--font-heading); font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 9999px; }
+  .tier-tag--gold { background-color: var(--sun-60); color: var(--ebony-130); }
+  .tier-freq { font-family: var(--font-heading); font-weight: 700; font-size: 14px; color: var(--bayou-110); padding-bottom: 12px; border-bottom: 1px solid rgba(55, 93, 108, 0.12); }
+  .clean-list { list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14.5px; color: var(--ebony-130); margin-bottom: 12px; }
+  .b2b-prose-card { background-color: var(--pearl-10); border-radius: var(--radius-card); padding: 36px; display: flex; flex-direction: column; gap: 16px; box-shadow: var(--card-shadow); }
+  .b2b-prose-card .text-body { color: var(--ebony-130); line-height: 1.9; }
+
+  @media (max-width: 980px) {
+    .tiers-grid { grid-template-columns: 1fr; }
+  }
+</style>

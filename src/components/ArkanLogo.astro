@@ -1,0 +1,80 @@
+---
+interface Props {
+  variant?: 'dark' | 'light';
+}
+
+const { variant = 'dark' } = Astro.props;
+const isLight = variant === 'light';
+---
+
+<span class={`arkan-logo ${isLight ? 'arkan-logo--light' : ''}`}>
+  <svg
+    class="arkan-logo__icon"
+    width="46"
+    height="46"
+    viewBox="0 0 48 48"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <circle
+      cx="24"
+      cy="24"
+      r="21"
+      stroke={isLight ? '#FAFAF9' : '#375D6C'}
+      stroke-width="2.2"
+    />
+    <path
+      d="M24 10V38M10 24H38M14.5 14.5L33.5 33.5M33.5 14.5L14.5 33.5"
+      stroke="#F1CA7E"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <circle cx="24" cy="24" r="5" fill={isLight ? '#2D3639' : '#FAFAF9'} stroke={isLight ? '#F1CA7E' : '#375D6C'} stroke-width="2.2" />
+  </svg>
+  <span class="arkan-logo__words">
+    <strong class="arkan-logo__title">أركان</strong>
+    <span class="arkan-logo__sub">لصيانة وتركيب التكييف</span>
+  </span>
+</span>
+
+<style>
+  .arkan-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .arkan-logo__icon {
+    flex-shrink: 0;
+  }
+
+  .arkan-logo__words {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+  }
+
+  .arkan-logo__title {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--bayou-110);
+    letter-spacing: -0.3px;
+  }
+
+  .arkan-logo__sub {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ebony-100);
+  }
+
+  .arkan-logo--light .arkan-logo__title {
+    color: var(--pearl-10);
+  }
+
+  .arkan-logo--light .arkan-logo__sub {
+    color: var(--pearl-50);
+  }
+</style>
